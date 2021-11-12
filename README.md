@@ -1,4 +1,4 @@
-Keepers.app is still in private invite-only mode[.](Keepers.0.0.7.277.ipa)
+Keepers.app is still in private invite-only mode[.](https://github.com/keepers-photos/keepers.photos/blob/main/Keepers-v0.0.13.277.ipa)
 
 Keen to give it a whirl? Join the [waiting list](https://happymoose.activehosted.com/f/7).
 
