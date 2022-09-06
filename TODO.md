@@ -1,0 +1,3 @@
+- How to padding-top: 1vw for slogan?
+- Add FAQ section
+- Add B corp notice

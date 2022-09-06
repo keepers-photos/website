@@ -1,89 +1,122 @@
+<!doctype html>
 <html>
-    <body>
-        <div id="first-fold" style="background: url(static/images/photo-of-mum-daughter-in-bedroom-tent.webp)">
-            <h1>The fastest way to sort your family photos</h1>
-            <p>We automatically organise your family trips, special moments and kids on your phone.</p>
-            <button>Join public tester list</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/tailwind.css" rel="stylesheet">
+      </head>
+    <body class="bg-gray-100 p-0 leading-7" >
+        <div id="first-fold" class="h-screen pb-10 text-slate-100 bg-cover bg-top bg-no-repeat" style="background-image: url(/img/photo-of-mum-daughter-in-bedroom-tent.webp)">
+            <div class="text-center pt-6 pb-12 px-4 sm:px-6 mx:px-8"> Keepers </div>
+            <div id="first-fold" class="mx-auto max-w-7xl mt-12 pt-[95vw] px-4 sm:px-6 lg:px-8 pb-16 text-center lg:pt-32"> 
+                <h1 class="mx-auto max-w-4xl font-display text-3xl font-extrabold leading-snug tracking-tight text-slate-100 sm:text-xl">The fastest way to sort your family photos</h1>
+                <p class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-100">Empowering tools for organising your family trips, special moments and kids photos on your&nbsp;phone.</p>
+                <div class="mt-10 flex justify-center gap-x-6">
+                    <a class="group inline-flex items-center justify-center rounded-full py-3 px-6 text-l font-normal focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/register">Join the queue</a>
+                    <a class="group inline-flex ring-1 items-center justify-center rounded-full py-3 px-6 text-l focus:outline-none ring-slate-200 text-slate-100 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-100 focus-visible:outline-blue-600 focus-visible:ring-slate-300" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><svg aria-hidden="true" class="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"><path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z"></path></svg><span class="ml-3">Watch video</span></a>
+                </div>
+            </div>
         </div>
 
-        <div id="problem-statement" style="background:rgb(15, 50, 64)">
-            <h2>Are you photos out of control?</h2>
+        <div id="problem-statement" class="text-slate-50 px-4 pt-9 pb-10" style="background:rgb(15, 50, 64)">
+            <h2 class="mt-8 text-4xl font-extrabold tracking-tight text-slate-100 pb-4">Are your photos out of control?</h2>
 
-            <section>
-                <img src="static/images/new-born-baby.webp" />
-                <p>It probably didn't start off this way. At the start you sorted some, printed and shared others, and maybe even filed some into albums</p>
+            <section class="mx-auto pt-10 pb-10">
+                <img class="mx-auto w-2/3 py-4" src="/img/problem-statement-new-born-baby.webp" />
+                <div>
+                    <p>It probably didn't start off this way. At the start you sorted some, printed and shared others, and maybe even filed some into albums</p>
+                    <p>As the kids grow, the pile of photos grows too.  And the mountain starts to be unwieldy and more unorganised.</p>
+                </div>
             </section>
 
-            <section>
-                <img src="static/images/overwhelmed-by-photos.webp" />
-                <p>As the kids grow, the pile of photos grows too. 
-                    And the mountain starts to be unwieldy and more unorganised.</p>
-                <p> Scrolling to find a photo takes what seems like an eternity, and often you can't find it, it's stressful!</p>
-                <p>Then mix in work photos, memes and screenshots. Sorting is now an impossible task. With little time to sort and no system to use you're stuck!</p>
+            <section class="mx-auto pb-10">
+                <img class="mx-auto w-2/3 pb-4" src="/img/problem-statement-overwhelmed-by-photos.webp" />
+                <div>
+                    <p> Scrolling to find a photo takes what seems like an eternity, and often you can't find it, it's stressful!</p>
+                    <p>Then mix in work photos, memes and screenshots. Sorting is now an impossible task. With little time to sort and no system to use you're stuck!</p>
+                </div>
             </section>
                 
-            <section>
-                <img src="static/images/photos-printed.webp" />
-                <p>At Keepers, we set out to change this.</p>
-                <p>We take care of the time-consuming and tedious tagging and filing and have even built an AI to identify each child as they grow.</p>
-                <p>After a super quick setup you can easily and instantly access, curate and relive the moments and remember the joy.</p>
+            <section class="mx-auto pb-10">
+                <img class="mx-auto w-2/3 pb-4" src="/img/problem-statement-photos-printed.webp" />
+                <div>
+                    <p>At Keepers, we set out to change this.</p>
+                    <p>We take care of the time-consuming and tedious tagging and filing and have even built an AI to identify each child as they grow.</p>
+                    <p>After a super quick setup you can easily and instantly access, curate and relive the moments and remember the joy.</p>
+                </div>
             </section>
         </div>
 
-        <div id="feature-walkthrough" style="background: url(chaotic-life.webp)">
-            <h2>How it works</h2>
-            <p>In a few simple steps, go from overwhelm to overjoy!
+        <div id="feature-walkthrough"  class="p-4 pb-96 text-gray-900 bg-contain bg-right-bottom bg-no-repeat" style="background-image: url(/img/problem-statement-chaotic-life.webp)">
+            <h2 class="mt-8 text-4xl font-extrabold tracking-tight text-slate-800 pb-4">How it works</h2>
+            <p class="pb-7">In a few simple steps, go from overwhelm to overjoy!</p>
 
-            <section>
-                <img src="static/images/app-feature-curate.svg" />
-                <p>Keepers automatically finds your family photos. It filters out screenshots, memes and identifies duplicates</p>
-            </section>
+            <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-2">
+                <section class="py-5">
+                    <img class="w-20 pr-4 float-left" src="/img/app-feature-curate.svg" />
+                    <p>Keepers automatically finds your family photos. It filters out screenshots, memes and identifies similar shots</p>
+                </section>
 
-            <section>
-                <img src="static/images/app-feature-calendar-view.svg" />
-                <p>Albums are instantly organised by family member, date, location and activity</p>
-            </section>
+                <section class="py-5">
+                    <img class="w-20 pr-4 float-left" src="/img/app-feature-face-id.svg" />
+                    <p>Our AI learns and groups photos of each family member</p>
+                </section>
 
-            <section>
-                <img src="static/images/app-feature-print.webp" />
-                <p>Effortlessly find your photos, then enjoy, create and share memories</p>
-            </section>
+                <section class="py-5">
+                    <img class="w-20 pr-4 float-left" src="/img/app-feature-calendar-view.svg" />
+                    <p>Albums are instantly organised by family member, date, location and activity</p>
+                </section>
+
+                <section class="py-5">
+                    <img class="w-20 pr-4 float-left" src="/img/app-feature-print.webp" />
+                    <p>Effortlessly find your photos, then enjoy, create and share memories</p>
+                </section>
+            </div>
         </div>
 
-        <div id="testimonials" style="background: url(strengthen-family-connection.webp)">
-            <h2>Approved by parents</h2>
+        <div id="testimonials"  class="mt-7 p-4" style="background: url(/img/strengthen-family-connection.webp)">
+            <h2 class="mt-8 text-4xl font-extrabold tracking-tight text-slate-800 pb-4">Approved by parents</h2>
             <p>What our product testing parents group shared about the Keepers App</p>
 
-            <section>
-                <blockquote>Every photo of my son is automatically added to his album. I  saw this image there from years ago and it brought such a smile to my face. I never have to worry about adding family members to albums again.</blockquote>
-                <p>Tash, Dentist</p>
-                <p>Camera Roll: 12,187 photos</p>
-                <p>Keepers: 1,828 moments</p>
-                <img src="static/images/testimonial-tash.webp" />
-            </section>
+            <div class="grid lg:grid-cols-3 md:grid-cols-1 lg:grid-gap-8">
+                <section class="mt-16 py-5">
+                    <img class="rounded-xl mb-4" src="/img/testimonial-tash.webp" />
+                    <p class="font-semibold">Tash, Dentist</p>
+                    <p class="font-semibold">Camera Roll: 12,187 photos</p>
+                    <p class="font-semibold">Keepers: 1,828 moments</p>
+                    <blockquote>"Every photo of my son is automatically added to
+                    his album. I  saw this image there from years ago and it
+                    brought such a smile to my face. I never have to worry about
+                    adding family members to albums again."</blockquote>
+                </section>
 
-            <section>
-                <blockquote>People expect a TV producer to have their photos organised. I didn't! My family photos were mixed up with thousands of work photos and screenshots. The app did all of the work for me. No more scrolling for me!</blockquote>
-                <p>Laura, TV producer</p>
-                <p>Camera Roll: 17,387 images</p>
-                <p>Keepers: 2,608 moments</p>
-                <img src="static/images/testimonial-laura.webp" />
-            </section>
+                <section class="py-5">
+                    <img class="rounded-xl mb-4" src="/img/testimonial-laura.webp" />
+                    <p class="font-semibold">Laura, TV producer</p>
+                    <p class="font-semibold">Camera Roll: 17,387 img</p>
+                    <p class="font-semibold">Keepers: 2,608 moments</p>
+                    <blockquote>"People expect a TV producer to have their photos organised. I didn't! My family photos were mixed up with thousands of work photos and screenshots. The app did all of the work for me. No more scrolling for me!"</blockquote>
+                </section>
 
-            <section>
-                <blockquote>I don't use many apps, and a friend convinced me to help test Keepers. It was easier and better than I expected. I even made a photo book during my kid's gym class.  I love how fast & easy it is.</blockquote>
-                <p>Jay, SAHM</p>
-                <p>Camera Roll: 9,342 photos</p>
-                <p>Keepers: 1,121 moments</p>
-                <img src="static/images/testimonial-jay.webp" />
-            </section>
+                <section class="py-5">
+                    <img class="rounded-xl mb-4" src="/img/testimonial-jay.webp" />
+                    <p class="font-semibold">Jay, SAHM</p>
+                    <p class="font-semibold">Camera Roll: 9,342 photos</p>
+                    <p class="font-semibold">Keepers: 1,121 moments</p>
+                    <blockquote class="mt-2">"I don't use many apps, and a friend convinced me to help test Keepers. It was easier and better than I expected. I even made a photo book during my kid's gym class.  I love how fast & easy it is."</blockquote>
+                </section>
+            </div>
         </div>
 
-        <div id="call-to-action">
-            <h2>Be part of the Keepers test group</h2>
-            <p>Join the product testing parents group and be the first of your friends to help ditch the guilt & love your photos again.</p>
-            <p>We'd love you to join us but don't worry, we understand if it is not for you.  We are busy parents too!</p>
-            <button>Join us</button>
+        <div id="call-to-action" class="text-center px-4 py-10 text-slate-100"  style="background:rgb(15, 50, 64)">
+            <h2 class="mt-8 mx-auto text-4xl font-bold tracking-tight text-slate-100 pb-4">Join the test group</h2>
+            <p class="pt-4">Be the first of your friends to help ditch the guilt & love your photos again.</p>
+            <div class="mt-10 flex justify-center gap-x-6">
+                <a class="group inline-flex items-center justify-center rounded-full py-3 px-6 text-l font-normal focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/register">Join now</a>
+            </div>
         </div>
+
+        <footer>
+        </footer>
     </body>
 </html>
