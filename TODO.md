@@ -1,3 +1,4 @@
-- How to padding-top: 1vw for slogan?
+- server https://keepers.photos/ to `/dist` and front it with cloudflare
+- Add B corp notice as a One more thing
+- Mention dogs, sports
 - Add FAQ section
-- Add B corp notice
