@@ -1,4 +1,3 @@
-- server https://keepers.photos/ to `/dist` and front it with cloudflare
 - Add B corp notice as a One more thing
-- Mention dogs, sports
 - Add FAQ section
+- Mention dogs, sports

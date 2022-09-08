@@ -15,7 +15,7 @@ module.exports = {
                 }
             },
             fontFamily: {
-                headline: ["orpheuspro", "sans-serif"]
+                headline: ["orpheuspro", "serif"],
             },
         },
     },
