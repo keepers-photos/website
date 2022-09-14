@@ -5,17 +5,18 @@ module.exports = {
         extend: {
             colors: {
                 brand: {
-                    'xx-light': '#E5C8E9',
-                    'x-light': '#DCA3DD',
+                    'xx-light': '#faaefc',
+                    'x-light': '#f685f4',
                     light: "#60A5FA",
-                    DEFAULT: "#A071C0",
+                    DEFAULT: "#fc65c4",
                     dark: "#1E3A8A",
                     'x-dark': '#4B2162',
                     'xx-dark': '#250034',
                 }
             },
             fontFamily: {
-                headline: ["orpheuspro", "serif"],
+                sans: ["objektiv-mk3", "sans-serif"], // ui-sans-serif
+                headline: ["ff-nuvo-web-pro", "sans-serif"], // ff-nuvo-web-pro // ice-cream-standard
             },
         },
     },
