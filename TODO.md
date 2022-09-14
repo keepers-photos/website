@@ -1,3 +1,3 @@
-- Add B corp notice as a One more thing
-- Add FAQ section
-- Mention dogs, sports
+Get app screens into the "How it works section"
+Optimise for mobile, iPad (Portrait, Landscape) and laptop
+Design for dark mode
