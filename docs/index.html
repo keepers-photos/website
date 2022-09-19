@@ -85,7 +85,7 @@
                         Keepers automatically finds your family photos. It filters out screenshots, memes and identifies similar shots
                     </p>
                     <video class="lazy w-2/3 md:w-1/2 lg:w-2/3 mx-auto border-slate-200 border-2 rounded-2xl" playsinline controls  muted="true">
-                        <source data-src="img/features-curate.mp4" type="video/mp4" />
+                        <source src="/assets/features-curate.1941db38.mp4" type="video/mp4" />
                     </video>
                 </section>
 
@@ -95,7 +95,7 @@
                         You show the AI examples of what each family member looks like over the years. It automatically tags photos for you.
                     </p>
                     <video class="lazy w-2/3 md:w-1/2 lg:w-2/3  mx-auto  border-slate-200 border-2 rounded-2xl" playsinline controls muted="true">
-                        <source data-src="img/features-train.mp4" type="video/mp4" />
+                        <source src="/assets/features-train.a616a4c0.mp4" type="video/mp4" />
                     </video>
                 </section>
 
@@ -106,7 +106,7 @@
                         Easily get to the photos you had in mind. No more
                         endless scrolling</p>
                     <video class="lazy w-2/3 md:w-1/2 lg:w-2/3  mx-auto border-slate-200 border-2 rounded-2xl" playsinline controls  muted="true">
-                        <source data-src="img/features-calendar.mp4" type="video/mp4" />
+                        <source src="/assets/features-calendar.83304c12.mp4" type="video/mp4" />
                     </video>
                 </section>
 
@@ -117,7 +117,7 @@
                         Or share your pictures, create playlists & videos for events 
                     </p>
                     <video class="lazy w-2/3 md:w-1/2 lg:w-2/3 mx-auto  border-slate-200 border-2 rounded-2xl" playsinline controls  muted="true">
-                        <source data-src="img/features-find.mp4" type="video/mp4" />
+                        <source src="/assets/features-find.773717d8.mp4" type="video/mp4" />
                     </video>
                 </section>
             </div>
@@ -234,41 +234,4 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
-    <script type="text/javascript">
-        /// Lazy load videos and only start autoplay when in view
-        document.addEventListener("DOMContentLoaded", function() {
-            var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
-          
-            if ("IntersectionObserver" in window) {
-              var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(function(video) {
-                  if (video.isIntersecting) {
-                    for (var source in video.target.children) {
-                      var videoSource = video.target.children[source];
-                      if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
-                        videoSource.src = videoSource.dataset.src;
-                      }
-                    }
-          
-                    video.target.load();
-                    video.target.addEventListener("playing", function() {
-                        video.target.removeAttribute("controls");
-                    })
-                    video.target.addEventListener("ended", function() {
-                        video.target.setAttribute("controls", "true");
-                    });
-                    video.target.classList.remove("lazy");
-                    lazyVideoObserver.unobserve(video.target);
-                  }
-                });
-              });
-          
-              lazyVideos.forEach(function(lazyVideo) {
-                lazyVideoObserver.observe(lazyVideo);
-              });
-            }
-          });
-
-
-    </script>
 </html>
