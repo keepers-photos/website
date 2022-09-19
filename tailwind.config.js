@@ -12,6 +12,12 @@ module.exports = {
                     dark: "#1E3A8A",
                     'x-dark': '#4B2162',
                     'xx-dark': '#250034',
+
+                    "teal": "#0c4254",
+                    'rose-bud': '#fab497',
+                    'hot-pink': "#ff66c4",
+                    'mandarin-pearl': '#f47558',
+                    'apple-blossom': '#b24a40',
                 }
             },
             fontFamily: {
