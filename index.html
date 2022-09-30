@@ -10,22 +10,23 @@
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
         <link rel="manifest" href="img/site.webmanifest">
         <style>
-            @import url("https://p.typekit.net/p.css?s=1&k=cjw0uao&ht=tk&f=4967.26994&a=3799785&app=typekit&e=css");
-
             @font-face {
-            font-family:"ff-nuvo-web-pro";
-            src:url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
-            font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
+                font-family:"ff-nuvo-web-pro";
+                src:url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+                font-display:swap;
+                font-style:normal;
+                font-weight:900;
+                font-stretch:normal;
             }
             
             @font-face {
-            font-family:"objektiv-mk3";
-            src:url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-            font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+                font-family:"objektiv-mk3";
+                src:url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+                font-display:swap;
+                font-style:normal;
+                font-weight:400;
+                font-stretch:normal;
             }
-            
-            .tk-ff-nuvo-web-pro { font-family: "ff-nuvo-web-pro",sans-serif; }
-            .tk-objektiv-mk3 { font-family: "objektiv-mk3",sans-serif; }
 
             mark {
                 background: url(/img/mark-bottom.svg) bottom center/97% 78% no-repeat,url(/img/mark-top.svg) top left/96% 100% no-repeat;
@@ -39,7 +40,7 @@
         <div id="first-fold" class="h-screen pb-10  bg-cover bg-top bg-no-repeat" 
             style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(img/photo-of-mum-daughter-in-bedroom-tent.webp)">
             <div class="text-center pt-10 pb-12 px-4 sm:px-6 mx:px-8"> 
-                <img loading="lazy" src="img/logo.webp" class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto">
+                <img loading="lazy" src="img/logo.webp" width="67" height="67" class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto">
                 <span class="font-headline font-black tracking-wide lowercase text-xl lg:text-3xl text-slate-50">Keepers</span>
             </div>
             <div id="first-fold" class="mx-auto max-w-7xl mt-12 pt-[25vh] md:pt-[40vh] lg:pt-[30vh] px-4 sm:px-6 lg:px-8 pb-16 text-center"> 
@@ -70,7 +71,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 md:grid-gap-8">
                 <section class="mx-auto py-10 md:px-3">
                     <div class="text-center prose font-headline font-black pb-3 text-brand-teal">We love taking photos &hellip;</div>
-                    <img loading="lazy" class="mx-auto w-2/3 pb-3" src="img/problem-statement-new-born-baby.webp" />
+                    <img loading="lazy" class="mx-auto w-2/3 pb-3" src="img/problem-statement-new-born-baby.webp" width="167" height="167" />
                     <div class="prose">
                         <p>At the start you sorted, shared and maybe even
                         printed them. But with tens of thousands of pictures now
@@ -79,8 +80,8 @@
                 </section>
 
                 <section class="mx-auto py-10 md:px-3">
-                    <div class="text-center prose font-bold pb-3 text-brand-teal">The photo mountain grows &hellip;</div>
-                    <img loading="lazy" class="mx-auto w-2/3 pb-5" src="img/problem-statement-overwhelmed-by-photos.webp" />
+                    <div class="text-center prose font-bold pb-3 text-brand-teal">The photo mountain grows</div>
+                    <img loading="lazy" class="mx-auto w-2/3 pb-5" src="img/problem-statement-overwhelmed-by-photos.webp"  width="167" height="167" />
                     <div class="prose">
                         <p>The unorganised photo pile and the stress
                         around it keeps on getting bigger. With little time to
@@ -92,7 +93,7 @@
                     
                 <section class="mx-auto py-10 md:px-3">
                     <div class="text-center prose font-bold pb-3 text-brand-teal">Keepers to the rescue</div>
-                    <img loading="lazy" class="mx-auto w-2/3 pb-5" src="img/problem-statement-photos-printed.webp" />
+                    <img loading="lazy" class="mx-auto w-2/3 pb-5" src="img/problem-statement-photos-printed.webp"  width="167" height="167" />
                     <div class="prose">
                         <p>So we've designed an app that will <mark>organise your
                         photos</mark>, help you create wonderful collections and give
@@ -114,7 +115,7 @@
                 <section class="mb-12 w-full md:w-2/3 mx-auto lg:mx-3">
                     <p class="prose text-center font-headline font-black text-brand-teal text-2xl mt-10 mb-6">
                         <mark>Focus</mark> on what matters</p>
-                    <img loading="lazy" class="w-32 mb-2 md:mb-24 pr-3 float-left" src="img/feature-face-tagging.webp" />
+                    <img loading="lazy" class="w-32 mb-2 md:mb-24 pr-3 float-left" src="img/feature-face-tagging.webp" width="117" height="117" />
                     <p class="prose mb-4">
                         Keepers automatically finds your family photos. It filters out screenshots, memes and identifies similar shots.
                     </p>
@@ -187,7 +188,7 @@
 
             <div class="mt-8 grid md:grid-cols-2 grid-cols-1 gap-6 ">
                 <section class="prose mb-6">
-                    <img class="mb-0 w-full md:w-48 pr-5 float-left" src="img/promise-team.webp" />
+                    <img class="mb-0 w-full md:w-48 pr-5 float-left" src="img/promise-team.webp" width="172" height="90" />
                     <p class="mt-0">
                         The team behind Keepers are all parents.  We know 
                         how precious your photos are so we are committed to
@@ -196,7 +197,7 @@
                 </section>
 
                 <section class="prose mb-6">
-                    <img class="pr-4 float-left w-20 md:w-36 md:mr-12" src="img/promise-care.webp" />
+                    <img class="pr-4 float-left w-20 md:w-36 md:mr-12" src="img/promise-care.webp" width="128" height="128" />
                     <p class="mt-0 ">
                         We want you to keep using Keepers for free and <mark>earn our
                         income when you purchase prints and books</mark>
@@ -205,7 +206,7 @@
                 </section>
 
                 <section class="prose mb-6">
-                    <img class="my-0 w-32 float-right md:w-48 pl-5 mt-3 md:pr-5 md:float-left" src="img/promise-b-corp.webp" />
+                    <img class="my-0 w-32 float-right md:w-48 pl-5 mt-3 md:pr-5 md:float-left" src="img/promise-b-corp.webp"  width="128" height="128"/>
                     <p class="mt-0 ">
                         We are becoming a Benefit corporation. It is a for profit 
                         company with a legal mandate to make decisions
@@ -214,7 +215,7 @@
                 </section>
 
                 <section class="prose mb-6">
-                    <img class="w-40 mb-0 md:w-48 pr-5 float-left" src="img/promise-1-percent.webp" />
+                    <img class="w-40 mb-0 md:w-48 pr-5 float-left" src="img/promise-1-percent.webp" width="172" height="108" />
                     <p class="mt-0 ">
                         We want <mark>our children and their children</mark> to enjoy 
                         this beautiful blue planet.  We commit to the 1% for the
@@ -233,7 +234,7 @@
 
             <div class="grid md:grid-cols-3 md:grid-gap-8">
                 <section class="pb-12 md:px-3">
-                    <img class="rounded-xl mb-3 w-full object-cover object-center aspect-video" src="img/testimonial-laura.webp" />
+                    <img class="rounded-xl mb-3 w-full object-cover object-center aspect-video" src="img/testimonial-laura.webp" width="250" height="141" />
                     <p class="prose font-semibold">Laura, TV producer</p>
                     <blockquote class="prose mt-2 mb-3 text-black">
                         &ldquo; People expect a TV producer to have their photos
@@ -244,7 +245,7 @@
                 </section>
 
                 <section class="pb-12 md:px-3">
-                    <img class="rounded-xl mb-3 w-full object-cover object-center aspect-video" src="img/testimonial-tash.webp" />
+                    <img class="rounded-xl mb-3 w-full object-cover object-center aspect-video" src="img/testimonial-tash.webp" width="250" height="141" />
                     <p class="prose font-semibold">Tash, Dentist</p>
                     <blockquote class="prose mt-2 mb-3 text-black">
                         &ldquo; Every photo of my son is automatically added to
@@ -255,7 +256,7 @@
                 </section>
 
                 <section class="pb-12 md:px-3">
-                    <img class="rounded-xl mb-3 w-full object-cover object-center aspect-video" src="img/testimonial-jay.webp" />
+                    <img class="rounded-xl mb-3 w-full object-cover object-center aspect-video" src="img/testimonial-jay.webp" width="250" height="141" />
                     <p class="prose font-semibold">Jay, SAHM</p>
                     <blockquote class="prose mt-2 mb-3 text-black">
                         &ldquo; I don't use many apps, and a friend convinced me
@@ -278,16 +279,4 @@
             </div>
         </div>
     </body>
-    <!-- Hotjar Tracking Code for https://keepers.photos/ -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:3157934,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-
 </html>
