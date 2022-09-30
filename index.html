@@ -4,13 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Keepers: the fastest way to the moments you love</title>
-        <link rel="stylesheet" href="https://use.typekit.net/cjw0uao.css">
         <link href="css/tailwind.css" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
         <link rel="manifest" href="img/site.webmanifest">
         <style>
+            @import url("https://p.typekit.net/p.css?s=1&k=cjw0uao&ht=tk&f=4967.26994&a=3799785&app=typekit&e=css");
+
+            @font-face {
+            font-family:"ff-nuvo-web-pro";
+            src:url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"objektiv-mk3";
+            src:url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+            }
+            
+            .tk-ff-nuvo-web-pro { font-family: "ff-nuvo-web-pro",sans-serif; }
+            .tk-objektiv-mk3 { font-family: "objektiv-mk3",sans-serif; }
+
             mark {
                 background: url(/img/mark-bottom.svg) bottom center/97% 78% no-repeat,url(/img/mark-top.svg) top left/96% 100% no-repeat;
                 box-decoration-break: clone;
@@ -23,7 +39,7 @@
         <div id="first-fold" class="h-screen pb-10  bg-cover bg-top bg-no-repeat" 
             style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(img/photo-of-mum-daughter-in-bedroom-tent.webp)">
             <div class="text-center pt-10 pb-12 px-4 sm:px-6 mx:px-8"> 
-                <img src="img/logo.webp" class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto">
+                <img loading="lazy" src="img/logo.webp" class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto">
                 <span class="font-headline font-black tracking-wide lowercase text-xl lg:text-3xl text-slate-50">Keepers</span>
             </div>
             <div id="first-fold" class="mx-auto max-w-7xl mt-12 pt-[25vh] md:pt-[40vh] lg:pt-[30vh] px-4 sm:px-6 lg:px-8 pb-16 text-center"> 
@@ -47,8 +63,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 md:grid-gap-8">
                 <section class="mx-auto py-10 md:px-3">
-                    <div class="text-center prose font-bold pb-3 text-brand-teal">We love taking photos &hellip;</div>
-                    <img class="mx-auto w-2/3 pb-3" src="img/problem-statement-new-born-baby.webp" />
+                    <div class="text-center prose font-headline font-black pb-3 text-brand-teal">We love taking photos &hellip;</div>
+                    <img loading="lazy" class="mx-auto w-2/3 pb-3" src="img/problem-statement-new-born-baby.webp" />
                     <div class="prose">
                         <p>At the start you sorted, shared and maybe even
                         printed them. But with tens of thousands of pictures now
@@ -57,8 +73,8 @@
                 </section>
 
                 <section class="mx-auto py-10 md:px-3">
-                    <div class="text-center prose font-bold pb-3 text-brand-teal">The photo mountain grows &hellip;</div>
-                    <img class="mx-auto w-2/3 pb-5" src="img/problem-statement-overwhelmed-by-photos.webp" />
+                    <div class="text-center prose font-headline font-black pb-3 text-brand-teal">The photo mountain grows &hellip;</div>
+                    <img loading="lazy" class="mx-auto w-2/3 pb-5" src="img/problem-statement-overwhelmed-by-photos.webp" />
                     <div class="prose">
                         <p>The unorganised photo pile and the stress
                         around it keeps on getting bigger. With little time to
@@ -69,8 +85,8 @@
                 </section>
                     
                 <section class="mx-auto py-10 md:px-3">
-                    <div class="text-center prose font-bold pb-3 text-brand-teal">Keepers to the rescue</div>
-                    <img class="mx-auto w-2/3 pb-5" src="img/problem-statement-photos-printed.webp" />
+                    <div class="text-center prose font-headline font-black pb-3 text-brand-teal">Keepers to the rescue</div>
+                    <img loading="lazy" class="mx-auto w-2/3 pb-5" src="img/problem-statement-photos-printed.webp" />
                     <div class="prose">
                         <p>So we've designed an app that will <mark>organise your
                         photos</mark>, help you create wonderful collections and give
@@ -90,9 +106,9 @@
 
             <div class="px-6 w-max-md grid grid-cols-1 lg:grid-cols-2" >
                 <section class="mb-12 w-full md:w-2/3 mx-auto lg:mx-3">
-                    <p class="prose text-center font-headline font-extrabold text-brand-teal text-2xl mt-10 mb-6">
+                    <p class="prose text-center font-headline font-black text-brand-teal text-2xl mt-10 mb-6">
                         <mark>Focus</mark> on what matters</p>
-                    <img class="w-32 mb-2 md:w-40 pr-5 float-left" src="img/feature-face-tagging.webp" />
+                    <img loading="lazy" class="w-32 mb-2 md:w-40 pr-5 float-left" src="img/feature-face-tagging.webp" />
                     <p class="prose mb-4">
                         Keepers automatically finds your family photos. It filters out screenshots, memes and identifies similar shots.
                     </p>
@@ -106,9 +122,9 @@
                 </section>
 
                 <section class="mb-12 w-full md:w-2/3 mx-auto lg:mx-3">
-                    <p class="prose text-center font-headline font-extrabold text-brand-teal text-2xl mt-10 mb-6">
+                    <p class="prose text-center font-headline font-black text-brand-teal text-2xl mt-10 mb-6">
                         <mark>Effortless</mark> face tagging</p>
-                    <img class="w-32 mb-0 md:w-40 pr-5 float-left" src="img/feature-print-products.webp" />
+                    <img loading="lazy" class="w-32 mb-0 md:w-40 pr-5 float-left" src="img/feature-print-products.webp" />
                     <p class="prose mb-4">
                         You show the app examples of what each family member looks like over the years. 
                         It automatically find similar ones and tags photos for you.
@@ -123,15 +139,15 @@
                 </section>
 
                 <section class="mb-12 w-full md:w-2/3 mx-auto lg:mx-3">
-                    <p class="prose text-center font-headline font-extrabold text-brand-teal text-2xl mt-10 mb-6">
+                    <p class="prose text-center font-headline font-black text-brand-teal text-2xl mt-10 mb-6">
                         <mark>Neat</mark>ly organised</p>
-                    <img class="w-32 mb-0 md:w-40 pr-5 float-left" src="img/feature-dollshouse.webp" />
+                    <img loading="lazy" class="w-32 mb-0 md:w-40 pr-5 float-left" src="img/feature-dollshouse.webp" />
                     <p class="prose mb-4">
                         It's the <mark>Marie Kondo method for your photos</mark>. Except, you don't have to do the hard work.
                     </p>
                     <p class="prose mb-4">
                         The app uses a calendar view as the main organisation system. You can easily get to the events or places you are looking for.
-                        It also helps you relive past memories and <mark>improve your visual journaling habit</mark>.
+                        It helps you relive past memories and <mark>improve your visual journaling habit</mark>.
                     </p>
                     <video class="lazy w-2/3 md:w-1/2 lg:w-2/3  mx-auto border-slate-200 border-2 rounded-2xl" playsinline controls  muted="true">
                         <source src="img/features-calendar.mp4" type="video/mp4" />
@@ -139,9 +155,9 @@
                 </section>
 
                 <section class="mb-12 w-full md:w-2/3 mx-auto lg:mx-3">
-                    <p class="prose text-center font-headline font-extrabold text-brand-teal text-2xl mt-10 mb-6">Create. 
+                    <p class="prose text-center font-headline font-black text-brand-teal text-2xl mt-10 mb-6">Create. 
                         <mark>Easy</mark> like the breeze</p>
-                    <img class="w-32 md:mb-6 md:w-40 pr-5 float-left" src="img/problem-statement-chaotic-life.webp" />
+                    <img loading="lazy" class="w-32 md:mb-6 md:w-40 pr-5 float-left" src="img/problem-statement-chaotic-life.webp" />
                     <p class="prose mb-4">
                         With all your photos organised, you can <mark>create photo books in minutes</mark>. 
                         Or share your pictures, create slideshows, playlists & videos for&nbsp;events.
