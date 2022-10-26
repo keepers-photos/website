@@ -36,7 +36,7 @@
                 color: var(--color-black)
             }
         </style>
-      <link rel="stylesheet" href="/assets/index.bd15e034.css">
+      <link rel="stylesheet" href="/assets/index.b0b33f71.css">
     </head>
     <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
         <div id="first-fold" class="h-screen pb-10  bg-cover bg-top bg-no-repeat" 
@@ -52,15 +52,6 @@
                 <p class="mx-auto mt-6 md:text-xl lg:text-2xl text-slate-50">
                     Effortless organisation of your family photos
                 </p>
-                <div class="mt-8 flex justify-center gap-x-6">
-                    <a class="group inline-flex items-center justify-center
-                    rounded-full uppercase py-3 px-10 md:px-12 text-sm
-                    text-slate-50 focus:outline-none focus-visible:outline-2
-                    focus-visible:outline-offset-2 bg-brand
-                    hover:bg-brand-x-dark active:bg-brand-x-dark
-                    active:text-slate-300 focus-visible:outline-slate-900"
-                    href="https://fyxgu3yp3rh.typeform.com/to/ZXpGAmM1">Sign up now</a>
-                </div>
             </div>
         </div>
 
@@ -272,8 +263,21 @@ photo pile and the stress around it keeps on getting bigger. </p>
                 Sign up to be an early adopter and together we'll make Keepers perfect. It won't cost you anything. We'll throw in a free photo book too.
             </p>
             <div class="mt-10 flex justify-center gap-x-6">
-                <a class="group inline-flex items-center justify-center rounded-full text-sm tracking-widest uppercase py-3 px-10 md:px-12 text-slate-50 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-brand hover:bg-brand-x-dark active:bg-brand-x-dark active:text-slate-300 focus-visible:outline-slate-900" href="https://fyxgu3yp3rh.typeform.com/to/ZXpGAmM1">Sign up now</a>
+                <a id="signUpButton" class="group inline-flex items-center justify-center rounded-full text-sm tracking-widest uppercase py-3 px-10 md:px-12 text-slate-50 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-brand hover:bg-brand-x-dark active:bg-brand-x-dark active:text-slate-300 focus-visible:outline-slate-900" href="https://fyxgu3yp3rh.typeform.com/to/ZXpGAmM1">Sign up now</a>
             </div>
         </div>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); 
+            fbq('init', '875415683448386'); 
+            fbq('track', 'PageView');
+
+
+            var button = document.getElementById('signUpButton');
+            button.addEventListener('click', function() { 
+                fbq('track', 'lead'); 
+            }, false);
+        </script>
+        <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=875415683448386&ev=PageView&noscript=1"/></noscript><!-- End Facebook Pixel Code -->
     </body>
 </html>
