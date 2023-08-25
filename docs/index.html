@@ -36,9 +36,37 @@
                 color: var(--color-black)
             }
         </style>
-      <link rel="stylesheet" href="/assets/tailwind.1b4520f8.css">
+        <script>
+          function openGooglePlayPopup() { document.getElementById("googlePlayPopup").className = ''; }
+          function closeGooglePlayPopup() { document.getElementById("googlePlayPopup").className = 'hidden'; }
+        </script>
+      <link rel="stylesheet" href="/assets/tailwind.92d93477.css">
     </head>
     <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
+
+      <div id="googlePlayPopup" class="hidden">
+      <div id="" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
+          <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+              <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+                <div>
+                  <div class="mt-3 text-center sm:mt-5">
+                    <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title"> </h3>
+                    <div class="mt-2">
+                      <p class="text-sm text-gray-800">Apologies! We haven’t released the android version yet but shall do soon. Please leave your email address if you would like to be one of the first to download it. We’ll contact you as soon as its ready for release.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 sm:mt-6">
+                  <button type="button" class="inline-flex w-full justify-center rounded-md bg-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" onclick="closeGooglePlayPopup()">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
         <div id="first-fold" class="h-screen pb-10  bg-cover bg-top bg-no-repeat" 
             style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/photo-of-mum-daughter-in-bedroom-tent.cbe198e0.webp)">
             <div class="text-center pt-10 pb-12 px-4 sm:px-6 mx:px-8"> 
@@ -54,9 +82,10 @@
                     Keepers is a simple, yet powerful app that uses AI to
                     declutter your photos, find lost memories and put you in control.
                 </p>
-                <p class="mx-auto mt-12 md:md-8 text-center pb-8">
-                  <a href="#"><img class="md:w-40 mx-auto" src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.a26fc5b3.svg" /></a>
-                </p>
+                <div class="mx-auto mt-12 md:md-8 text-center pb-8 flex justify-center justify-items-center justify-self-center">
+                  <a href="#"><img class="h-[46px] md:h-[54px] mx-2 md:mx-4" src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.a26fc5b3.svg" /></a>
+                  <a href="javascript:void()" onclick="openGooglePlayPopup()"><img class="h-[46px] md:h-[52px] mx-2 md:mx-4" src="/assets/Google_Play_Store_badge_EN.b1c3a8f0.svg" /></a>
+                </div>
             </div>
         </div>
 
@@ -317,9 +346,10 @@ photo pile and the stress around it keeps on getting bigger. </p>
               We'd love you to join the Keepers Family, download the app today!
             </p>
             <div class="mt-10 mb-20 flex justify-center gap-x-6">
-              <p>
-                <a href="#"><img class="w-40" src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.a26fc5b3.svg" /></a>
-              </p>
+                <div class="mx-auto mt-12 md:md-8 text-center pb-8 flex justify-center justify-items-center justify-self-center">
+                  <a href="#"><img class="h-[46px] md:h-[54px] mx-2 md:mx-4" src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.a26fc5b3.svg" /></a>
+                  <a href="javascript:void()" onclick="openGooglePlayPopup()"><img class="h-[46px] md:h-[52px] mx-2 md:mx-4" src="/assets/Google_Play_Store_badge_EN.b1c3a8f0.svg" /></a>
+                </div>
             </div>
             <div class="my-4 flex justify-center gap-x-6 text-white text-small">
               <p>
