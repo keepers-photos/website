@@ -66,8 +66,8 @@
                             Save
                           </button>
                         </div>
-                        <p class="w-full pt-2 text-green-500" x-show="!!successMsg" x-text="successMsg"></p>
-                        <p class="w-full pt-2 text-pink-700" x-show="!!errorMsg" x-text="errorMsg"></p>
+                        <p class="w-full pt-2 text-green-500 text-sm" x-show="!!successMsg" x-html="successMsg"></p>
+                        <p class="w-full pt-2 text-pink-700 test-sm" x-show="!!errorMsg" x-text="errorMsg"></p>
                       </form>
                     </div>
                   </div>
@@ -418,7 +418,7 @@ photo pile and the stress around it keeps on getting bigger. </p>
                 .then((data) => {
                   this.loading = false;
                   if (data.success) {
-                    this.successMsg = "Success!";
+                    this.successMsg = "Thanks for your submitting!<br /> We'll contact you as soon as possible.";
                     this.submitted = true;
                     setTimeout(() => {
                       this.init();
