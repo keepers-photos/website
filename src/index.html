@@ -36,47 +36,11 @@
                 color: var(--color-black)
             }
         </style>
-        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        <script>
-          function openGooglePlayPopup() { document.getElementById("googlePlayPopup").className = ''; }
-          function closeGooglePlayPopup() { document.getElementById("googlePlayPopup").className = 'hidden'; }
-
-          const wishlistData = () => {
-            return {
-              email: "",
-              successMsg: "",
-              errorMsg: "",
-              loading: false,
-              addWishlist: function() {
-                this.successMsg = "";
-                this.errorMsg = "";
-                this.loading = true;
-                if (this.email) {
-                  return fetch("https://api.keepers.photos/functions/v1/wishlist", {
-                    method: "POST",
-                    headers: {"Content-Type": "application/json"},
-                    body: JSON.stringify({email: this.email})
-                  }).then((resp) => { return resp.json() })
-                    .then((data) => {
-                      this.loading = false;
-                      if (data.success) {
-                        this.successMsg = "Success!"
-                      } else {
-                        this.errorMsg = data.reason;
-                      }
-                    })
-                } else {
-                  this.errorMsg = "Invalid Email Address";
-                  this.loading = false;
-                }
-              }
-            }
-          }
-        </script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
 
-      <div id="googlePlayPopup" class="">
+      <div id="googlePlayPopup" class="hidden">
       <div id="" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
@@ -417,11 +381,40 @@ photo pile and the stress around it keeps on getting bigger. </p>
         </script>
         <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=875415683448386&ev=PageView&noscript=1"/></noscript><!-- End Facebook Pixel Code -->
     </body>
-  <script>
-    document.addEventListener('alpine:init', () => {
-      Alpine.bind('errorTips', () => ({
-          text: 'button',
-      }))
-    })
-  </script>
+    <script type="text/javascript">
+      function openGooglePlayPopup() { document.getElementById("googlePlayPopup").className = ''; }
+      function closeGooglePlayPopup() { document.getElementById("googlePlayPopup").className = 'hidden'; }
+
+      const wishlistData = () => {
+        return {
+          email: "",
+          successMsg: "",
+          errorMsg: "",
+          loading: false,
+          addWishlist: function() {
+            this.successMsg = "";
+            this.errorMsg = "";
+            this.loading = true;
+            if (this.email) {
+              return fetch("https://api.keepers.photos/functions/v1/wishlist", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({email: this.email})
+              }).then((resp) => { return resp.json() })
+                .then((data) => {
+                  this.loading = false;
+                  if (data.success) {
+                    this.successMsg = "Success!"
+                  } else {
+                    this.errorMsg = data.reason;
+                  }
+                })
+            } else {
+              this.errorMsg = "Invalid Email Address";
+              this.loading = false;
+            }
+          }
+        }
+      }
+    </script>
 </html>
