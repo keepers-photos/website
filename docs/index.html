@@ -1,459 +1,832 @@
-<!doctype html>
+<!DOCTYPE html>
 <!-- Handcrafted by Alex, Meg and Aiden with substantial contribution from Roanne and Joe. -->
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Keepers: declutter your family photos now</title>
-        <meta name="apple-itunes-app" content="app-id=1579027575">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-4c53d9da.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
-        <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAuVJREFUOE9tk0toXFUYx3/fvXfu3MfMnZmbmdg0NmQWjdjWCoJgg4KCdFsKPooLERStAVFxoVDBAVsXQlzowgfuRF10Iz43StQIFYLgA6RJ85hISTOOmRnm0Xncx5EJJDaNH5zF+Z/Dj4/z+46wr5SUQPbnUELim/M9F/vPq4cJ+SAWskqDbi+mvNqj2Q6JIzBs2Uxk5Mz0F+kfdkC7APWGKtBnCYcsFlTWAha+bGM6ilTawE3pmBmdhKetGbeaR4ol6Q0h/wFm1Xu4PEMGup2YS+da6DmF62vkDiRwCzqGpyOWRmyoV0df0y/sAtqz6s6kyS+Gj44Pf77Tpf5rgHOL+s2fNG1/IjFl5nXEETAgimirBLe5z8nGdge182rO9bjfzAMFmH+iddVKqVfuXvQ+oYQe2/FZ7aBWwmKEAFQH4jYfGS/K47I603/ISesX01kdOw+Rr1o/vSQTD5SlceOLl1/vFl3bWM0fNaAGVFBsMS0Lp9p/+LnEscyITsrXSOakLDNSvFmXUkr7sdCK7jhnkxs3oAzqGl/J3HRzKeVoh31fx8tpOK5edt8y/hfwc7EZxQgnLqRRV2CwyXfy7YnmkxLGH9qm4CY1nKQ0jG51rPh9cVvTTi2fbo3WV+JKvRpx/NEUWS1B2OSkqJLSFuY7C9VK/64kgiMaiVD7PYrlhXsW03NDQHhena4u9mY3loNitRZw6IjD5AHrc/ddObVtoTmj7t1qDObXLvcI1mPMviC6UDhpfHP7I3YqXpf7GssBV5d6VLZCDh6yBxPj1rHM+3Jld5DaZ9Wn1hhnGFcElsLMa2jD0xoM1qHxV8DmyoDqVsjoqPXm8a+tl/dMYu1pNWEnuWyNYTMG2EAMUQt6fyvqGyGVlQH1elSZnPKmDn8szT2A4abzlHo26fG2PoKBB5FAvwvXm4rmtYBKOehe78SPPXjJ+2zfZ9oJVEllgSxJGGoYrkYfeuUeccf65+hFad9o519ZECSp4DokvwAAAABJRU5ErkJggg==">
-        <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
-        <style>
-            @font-face {
-                font-family:"ff-nuvo-web-pro";
-                src:url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
-                font-display:swap;
-                font-style:normal;
-                font-weight:900;
-                font-stretch:normal;
-            }
-            
-            @font-face {
-                font-family:"objektiv-mk3";
-                src:url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-                font-display:swap;
-                font-style:normal;
-                font-weight:400;
-                font-stretch:normal;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keepers: declutter your family photos now</title>
+    <meta name="apple-itunes-app" content="app-id=1579027575" />
+    
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon-4c53d9da.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAuVJREFUOE9tk0toXFUYx3/fvXfu3MfMnZmbmdg0NmQWjdjWCoJgg4KCdFsKPooLERStAVFxoVDBAVsXQlzowgfuRF10Iz43StQIFYLgA6RJ85hISTOOmRnm0Xncx5EJJDaNH5zF+Z/Dj4/z+46wr5SUQPbnUELim/M9F/vPq4cJ+SAWskqDbi+mvNqj2Q6JIzBs2Uxk5Mz0F+kfdkC7APWGKtBnCYcsFlTWAha+bGM6ilTawE3pmBmdhKetGbeaR4ol6Q0h/wFm1Xu4PEMGup2YS+da6DmF62vkDiRwCzqGpyOWRmyoV0df0y/sAtqz6s6kyS+Gj44Pf77Tpf5rgHOL+s2fNG1/IjFl5nXEETAgimirBLe5z8nGdge182rO9bjfzAMFmH+iddVKqVfuXvQ+oYQe2/FZ7aBWwmKEAFQH4jYfGS/K47I603/ISesX01kdOw+Rr1o/vSQTD5SlceOLl1/vFl3bWM0fNaAGVFBsMS0Lp9p/+LnEscyITsrXSOakLDNSvFmXUkr7sdCK7jhnkxs3oAzqGl/J3HRzKeVoh31fx8tpOK5edt8y/hfwc7EZxQgnLqRRV2CwyXfy7YnmkxLGH9qm4CY1nKQ0jG51rPh9cVvTTi2fbo3WV+JKvRpx/NEUWS1B2OSkqJLSFuY7C9VK/64kgiMaiVD7PYrlhXsW03NDQHhena4u9mY3loNitRZw6IjD5AHrc/ddObVtoTmj7t1qDObXLvcI1mPMviC6UDhpfHP7I3YqXpf7GssBV5d6VLZCDh6yBxPj1rHM+3Jld5DaZ9Wn1hhnGFcElsLMa2jD0xoM1qHxV8DmyoDqVsjoqPXm8a+tl/dMYu1pNWEnuWyNYTMG2EAMUQt6fyvqGyGVlQH1elSZnPKmDn8szT2A4abzlHo26fG2PoKBB5FAvwvXm4rmtYBKOehe78SPPXjJ+2zfZ9oJVEllgSxJGGoYrkYfeuUeccf65+hFad9o519ZECSp4DokvwAAAABJRU5ErkJggg=="
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=" />
+    <style>
+      @font-face {
+        font-family: "ff-nuvo-web-pro";
+        src: url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+            format("woff2"),
+          url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+            format("woff"),
+          url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+            format("opentype");
+        font-display: swap;
+        font-style: normal;
+        font-weight: 900;
+        font-stretch: normal;
+      }
 
-            mark {
-		font-style:normal;
-		font-weight: 900;
-		background-color: transparent;
-                color: var(--color-black)
-            }
-        </style>
-        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-      <link rel="stylesheet" href="/assets/tailwind-4c78c1d5.css">
-    </head>
-    <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
+      @font-face {
+        font-family: "objektiv-mk3";
+        src: url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("woff2"),
+          url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("woff"),
+          url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("opentype");
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: normal;
+      }
+    </style>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link rel="stylesheet" href="/assets/tailwind-302a0f52.css">
+  </head>
+  <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
+    <div id="googlePlayPopup" class="hidden">
+      <div
+        id=""
+        class="relative z-10"
+        aria-labelledby="modal-title"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div
+          class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"
+        ></div>
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+          <div
+            class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+          >
+            <div
+              class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6"
+            >
+              <div>
+                <div class="mt-3 text-center sm:mt-5">
+                  <h3
+                    class="text-base font-semibold leading-6 text-gray-900"
+                    id="modal-title"
+                  ></h3>
+                  <div class="mt-2">
+                    <p class="text-sm text-gray-800">
+                      We haven’t released the Android version yet but shall do
+                      soon. Please leave your email address to get notified.
+                    </p>
 
-      <div id="googlePlayPopup" class="hidden">
-      <div id="" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
-          <div class="fixed inset-0 z-10 overflow-y-auto">
-            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-              <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
-                <div>
-                  <div class="mt-3 text-center sm:mt-5">
-                    <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title"> </h3>
-                    <div class="mt-2">
-                      <p class="text-sm text-gray-800">We haven’t released the Android version yet but shall do soon. Please leave your email address to get notified. </p>
-
-                      <form class="" @submit.prevent="addWishlist()" x-data="wishlistData()">
-                        <div class="mt-3 sm:flex sm:items-center" x-show="!submitted">
-                          <div class="w-full sm:max-w-xs">
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" name="email" id="email" class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="you@example.com" x-model="email">
-                          </div>
-                          <button type="submit" class="mt-3 inline-flex w-full items-center justify-center rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:ml-3 sm:mt-0 sm:w-auto" :class="loading ? 'bg-pink-200 hover-bg-pink-200 focus-visible:outline-pink-200' : 'bg-pink-400 hover-bg-pink-400 focus-visible:outline-pink-400'" x-bind:disabled="loading">
-                            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" x-show="loading">
-                              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                            </svg>
-                            Save
-                          </button>
+                    <form
+                      class=""
+                      @submit.prevent="addWishlist()"
+                      x-data="wishlistData()"
+                    >
+                      <div
+                        class="mt-3 sm:flex sm:items-center"
+                        x-show="!submitted"
+                      >
+                        <div class="w-full sm:max-w-xs">
+                          <label for="email" class="sr-only">Email</label>
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            placeholder="you@example.com"
+                            x-model="email"
+                          />
                         </div>
-                        <p class="w-full pt-2 text-green-500 text-sm" x-show="!!successMsg" x-html="successMsg"></p>
-                        <p class="w-full pt-2 text-pink-700 test-sm" x-show="!!errorMsg" x-text="errorMsg"></p>
-                      </form>
-                    </div>
+                        <button
+                          type="submit"
+                          class="mt-3 inline-flex w-full items-center justify-center rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:ml-3 sm:mt-0 sm:w-auto"
+                          :class="loading ? 'bg-pink-200 hover-bg-pink-200 focus-visible:outline-pink-200' : 'bg-pink-400 hover-bg-pink-400 focus-visible:outline-pink-400'"
+                          x-bind:disabled="loading"
+                        >
+                          <svg
+                            class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            x-show="loading"
+                          >
+                            <circle
+                              class="opacity-25"
+                              cx="12"
+                              cy="12"
+                              r="10"
+                              stroke="currentColor"
+                              stroke-width="4"
+                            ></circle>
+                            <path
+                              class="opacity-75"
+                              fill="currentColor"
+                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                            ></path>
+                          </svg>
+                          Save
+                        </button>
+                      </div>
+                      <p
+                        class="w-full pt-2 text-green-500 text-sm"
+                        x-show="!!successMsg"
+                        x-html="successMsg"
+                      ></p>
+                      <p
+                        class="w-full pt-2 text-pink-700 test-sm"
+                        x-show="!!errorMsg"
+                        x-text="errorMsg"
+                      ></p>
+                    </form>
                   </div>
                 </div>
-                <div class="mt-4 sm:mt-4">
-                  <button type="button" class="inline-flex w-full justify-center rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400" onclick="closeGooglePlayPopup()">Close</button>
-                </div>
+              </div>
+              <div class="mt-4 sm:mt-4">
+                <button
+                  type="button"
+                  class="inline-flex w-full justify-center rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
+                  onclick="closeGooglePlayPopup()"
+                >
+                  Close
+                </button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div
+      id="first-fold"
+      class="h-screen pb-10 bg-cover bg-top bg-no-repeat"
+      style="
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(/assets/photo-of-mum-daughter-in-bedroom-tent-cbe198e0.webp);
+      "
+    >
+      <div class="text-center pt-10 pb-12 px-4 sm:px-6 mx:px-8">
+        <img
+          loading="lazy"
+          src="data:image/webp;base64,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"
+          width="67"
+          height="67"
+          class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto"
+        />
+        <span
+          class="font-headline font-black tracking-wide lowercase text-xl lg:text-3xl text-white"
+          >Keepers</span
+        >
+      </div>
+      <div
+        id="first-fold"
+        class="mx-auto lg:max-w-3xl md:max-w-xl mt-12 pt-[15vh] md:pt-[40vh] lg:pt-[30vh] px-8 pb-16 text-center"
+      >
+        <h1
+          class="mx-auto max-w-3xl font-headline text-2xl md:text-5xl lg:text-3xl font-bold tracking-wide text-slate-200"
+        >
+          Curate&nbsp;memories. Create&nbsp;stories.
+        </h1>
+        <p class="mx-auto mt-4 text-sm md:text-lg text-white">
+          Experience the joy of curating your photos and crafting&nbsp;beautiful
+          photo&nbsp;books&nbsp;effortlessly.
+        </p>
+        <div
+          class="mx-auto mt-4 text-center flex justify-center justify-self-center"
+        >
+          <a
+            class="mr-2"
+            href="javascript:void(0)"
+            onclick="trackAppstoreClick()"
+            ><img
+              class="h-[46px] mx-2"
+              src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg"
+          /></a>
+          <a href="javascript:void(0)" onclick="openGooglePlayPopup()"
+            ><img
+              class="h-[46px] mx-2"
+              src="/assets/Google_Play_Store_badge_EN-b1c3a8f0.svg"
+          /></a>
         </div>
+      </div>
+    </div>
 
-        <div id="first-fold" class="h-screen pb-10  bg-cover bg-top bg-no-repeat" 
-            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/photo-of-mum-daughter-in-bedroom-tent-cbe198e0.webp)">
-            <div class="text-center pt-10 pb-12 px-4 sm:px-6 mx:px-8"> 
-                <img loading="lazy" src="data:image/webp;base64,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" width="67" height="67" class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto">
-                <span class="font-headline font-black tracking-wide lowercase text-xl lg:text-3xl text-slate-50">Keepers</span>
-            </div>
-            <div id="first-fold" class="mx-auto lg:max-w-3xl md:max-w-xl mt-12 pt-[25vh] md:pt-[40vh] lg:pt-[30vh] px-8 sm:px-8 lg:px-8 pb-16 text-center"> 
-                <h1 class="mx-auto max-w-4xl font-headline text-2xl md:text-5xl font-black tracking-wide text-slate-200" style="line-height: 1.4">
-                  The family photo experience you'll love
-                </h1>
-                <p class="mx-auto mt-6 max-w-2xl md:text-xl lg:text-xl text-slate-50">
-                    Overwhelmed by the sheer volume of photos and videos on your iPhone?
-                    Keepers is a simple, yet powerful app that uses AI to
-                    declutter your photos, find lost memories and put you in control.
-                </p>
-                <div class="mx-auto mt-12 md:md-8 text-center pb-8 flex justify-center justify-items-center justify-self-center">
-                  <a href="javascript:void(0)" onclick="trackAppstoreClick()"><img class="h-[46px] md:h-[54px] mx-2 md:mx-4" src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg" /></a>
-                  <a href="javascript:void(0)" onclick="openGooglePlayPopup()"><img class="h-[46px] md:h-[52px] mx-2 md:mx-4" src="/assets/Google_Play_Store_badge_EN-b1c3a8f0.svg" /></a>
-                </div>
-            </div>
-        </div>
+    <div id="problem-statement" class="py-24 px-6">
+      <p class="pb-2 text-center uppercase text-brand text-sm">
+        Are your photos out of control?
+      </p>
+      <h2
+        class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-6 max-w-lg"
+      >
+        It probably didn't start off this&nbsp;way
+      </h2>
 
-        <div id="problem-statement" class="py-24 px-6">
-            <p class="pb-2 text-center uppercase text-brand text-sm">Are your photos out of control?</p>
-            <h2 class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-6 max-w-lg">
-                It probably didn't start off this&nbsp;way
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-3">
-                <section class="py-10 md:px-2 lg:px-10">
-                    <div class="text-center prose text-lg font-headline font-black pb-3 text-brand-teal">We love taking photos...</div>
-                    <img loading="lazy" class="mx-auto w-2/3 pb-3" src="/assets/problem-statement-new-born-baby-3f7c476e.webp" width="167" height="167" />
-                    <div class="prose px-3">
-                        <p>Who can resist, your kids are so cute.  You've
-                        <mark>captured every moment</mark> on your phone.  Then you sorted,
-                        shared and maybe even printed them.  </p>
-                    </div>
-                </section>
-
-                <section class="py-10 md:px-2 lg:px-10">
-                    <div class="text-center prose text-lg font-headline font-black pb-3 text-brand-teal">The photo mountain grows...</div>
-                    <img loading="lazy" class="mx-auto w-2/3 pb-5" src="/assets/problem-statement-overwhelmed-by-photos-581cae9e.webp"  width="167" height="167" />
-                    <div class="prose px-3">
-<p>But time passes, now you have tens of thousands of pictures in your unorganised photo pile. You <mark
-class="">began the endless scrolling</mark>, knowing that some great moments are lost forever.  </p>
-<!--
-<p>The unorganised
-photo pile and the stress around it keeps on getting bigger. </p>
-</p>-->
-                    </div>
-                </section>
-                    
-                <section class="py-10 md:px-2 lg:px-10">
-                    <div class="text-center prose text-lg font-headline font-black pb-3 text-brand-teal">Keepers to the rescue!</div>
-                    <img loading="lazy" class="mx-auto w-2/3 pb-5" src="/assets/problem-statement-photos-printed-2f5f615e.webp"  width="167" height="167" />
-                    <div class="prose px-3"> <p>So we've designed an app that
-                    <mark>combats the stress</mark>. By organising your photos,
-                    and helping you create wonderful collections, we'll give you
-                    these precious memories back.</p>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <div id="feature-walkthrough">
-            <div class="py-12 bg-content bg-bottom bg-no-repeat">
-                <p class="px-6 text-center uppercase text-brand text-sm">Let our AI do the chores</p>
-                <p class="px-6 mx-auto font-headline font-black text-brand-teal
-                text-center text-2xl md:text-3xl max-w-lg">In a few simple
-                steps, go from overwhelmed to&nbsp;overjoyed!</p>
-            </div>
-
-            <div class="px-6 w-max-md grid grid-cols-1 lg:grid-cols-2" >
-                <section class="my-12 w-full md:w-2/3 mx-auto">
-                    <img loading="lazy" class="w-1/2 mx-auto md:w-52 md:float-right md:ml-6 md:mb-0" src="/assets/feature-face-tagging-f23d94b1.webp" width="117" height="117" />
-                    <p class="prose font-headline text-center md:text-left font-black text-brand-teal text-2xl my-4">
-                        <mark>Focus</mark> on what matters.</p>
-                    <p class="prose mb-4">
-                        Keepers <mark>skips over</mark> screenshots, memes and identifies visually similar shots. 
-                        Then these <mark>photos and videos are grouped together</mark> into moments.
-                    </p>
-                    <img class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl"
-                        src="/assets/features-curate-0bfcf5e7.webp">
-                    </img>
-                </section>
-
-                <section class="my-12 w-full md:w-2/3 mx-auto">
-                    <img loading="lazy" class="w-1/2 mx-auto md:w-52 md:float-right md:ml-6 md:mb-0" src="/assets/feature-dollshouse-35fb593b.webp"  width="117" height="117"/>
-                    <p class="prose font-headline text-center md:text-left font-black text-brand-teal text-2xl my-4">
-                        <mark>Neatly</mark> organised.</p>
-                    <p class="prose mb-4">
-                        It's like the <mark>Marie Kondo method for your photos and videos</mark>. Except, you don't have to do the hard work.
-                        With the LOVE view, you can easily find events, relive past memories and spark joy with your photos again.
-                    </p>
-                    <img class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl"
-                        src="/assets/features-train-d64b6cdb.webp">
-                    </img>
-                </section>
-
-                <section class="my-12 w-full md:w-2/3  mx-auto">
-                    <img loading="lazy" class="w-1/2 mx-auto md:w-52 md:float-right md:ml-6 md:mb-16" src="/assets/feature-print-products-880c60bb.webp" width="117" height="117"/>
-                    <p class="prose font-headline text-center md:text-left font-black text-brand-teal text-2xl my-4">
-                        <mark>The days are long but the years are short.</p>
-                    <p class="prose mb-4">
-                      Keepers' Flashback feature takes you on a daily trip down memory lane to rediscover life’s lost big and small moments.
-                    </p>
-                    <img class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl"
-                        src="/assets/features-flaskback-eae21624.webp">
-                    </img>
-                </section>
-
-                <section class="mt-12 w-full md:w-2/3 mx-auto">
-                    <img loading="lazy" class="w-1/2 mx-auto md:w-52 md:float-right md:ml-6 md:mb-16" src="/assets/feature-easy-create-ff6a3e3a.webp"  width="117" height="117"/>
-                    <p class="prose font-headline text-center md:text-left font-black text-brand-teal text-2xl my-4">Enjoy. 
-                        <mark>Easy as!</mark></p>
-                    <p class="prose mb-4">
-                      The app comes with a powerful &amp; easy to use AI search engine. With all your photos and videos organised, it only takes seconds to find memories, make albums and share photos.
-                    </p>
-                    <img class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl" 
-                        src="/assets/features-find-89df16cd.webp">
-                    </img>
-                </section>
-            </div>
-            <div class="mx-auto mt-12 mb-24 text-center flex justify-center justify-items-center">
-                <a href="javascript:void(0)" onclick="trackAppstoreClick()"><img class="h-[46px] md:h-[54px] mx-2 md:mx-4" src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg" /></a>
-                <a href="javascript:void(0)" onclick="openGooglePlayPopup()"><img class="h-[46px] md:h-[52px] mx-2 md:mx-4" src="/assets/Google_Play_Store_badge_EN-b1c3a8f0.svg" /></a>
-            </div>
-        </div>
-
-        <div id="faq"  class="px-6 py-24 text-gray-900 bg-origin-padding border-8 border-transparent bg-contain bg-right-bottom bg-no-repeat bg-slate-50">
-            <h2 class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-16 max-w-lg">
-                Frequent Asked Questions
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-3">
-                <section class="prose mb-10 max-w-md lg:max-w-lg px-4 lg:px-8">
-                    <p class="prose font-headline font-semibold text-brand-teal text-xl">Are my photos and videos safe? </p>
-                    <p class="prose font-normal text-black">Your photos and videos always stay on your phone. We won’t interfere with any backups or iCloud storage you already use.</p>
-                </section>
-
-                <section class="prose mb-10 max-w-md lg:max-w-lg px-4 lg:px-8">
-                    <p class="prose font-headline font-semibold text-brand-teal text-xl mb-4">Do you delete photos or videos? </p>
-                    <p class="prose font-normal text-black">We don't delete photos or videos. We only ever filter them out.</p>
-                </section>
-
-                <section class="prose mb-10 max-w-md lg:max-w-lg px-4 lg:px-8">
-                    <p class="prose font-headline font-semibold text-brand-teal text-xl mb-4">Do you work on Android phones? </p>
-                    <p class="prose font-normal text-black">Not yet, we are just on Apple currently.  We plan to launch it on the Android platform in the near future.</p>
-                </section>
-
-                <section class="prose mb-10 max-w-md lg:max-w-lg px-4 lg:px-8">
-                    <p class="prose font-headline font-semibold text-brand-teal text-xl mb-4">Can I link my partner's phone pictures? </p>
-                    <p class="prose font-normal text-black">We know many parents want to keep all their family photos in sync. We suggest using the iCloud share function to create a shared photo library between parents. Keepers can then connect to that.</p>
-                </section>
-
-                <section class="prose mb-10 max-w-md lg:max-w-lg px-4 lg:px-8">
-                    <p class="prose font-headline font-semibold text-brand-teal text-xl mb-4">Can I block someone from appearing?</p>
-                    <p class="prose font-normal text-black">Yes, this feature will be included in a future release.</p>
-                </section>
-
-                <section class="prose mb-10 max-w-md lg:max-w-lg px-4 lg:px-8">
-                    <p class="prose font-headline font-semibold text-brand-teal text-xl mb-4">How much does the app cost?</p>
-                    <p class="prose font-normal text-black">The Keepers app is currently free to use and we have no plans to introduce a subscription service in the near future.</p>
-                </section>
-
-                <section class="prose mb-10 max-w-md lg:max-w-lg px-4 lg:px-8">
-                    <p class="prose font-headline font-semibold text-brand-teal text-xl mb-4">I have downloaded Keepers and have a technical question. How do I get in contact with you?</p>
-                    <p class="prose font-normal text-black">Please reach us at <a href="mailto:info@keepers.photos">info@keepers.photos</a>. We'd love to help.</p>
-                </section>
-
-                <section class="prose mb-10 max-w-md lg:max-w-lg px-4 lg:px-8">
-                  <p class="prose font-headline font-semibold text-brand-teal text-xl mb-4">I love using Keepers and would like to review it?</p>
-                  <p class="prose font-normal text-black">We would love if you left us a review on the <a href="#">App Store</a></p>
-                </section>
-            </div>
-        </div>
-
-
-        <div id="mission"  class="px-6 py-24 text-gray-900 bg-origin-padding border-8 border-transparent bg-contain bg-right-bottom bg-no-repeat bg-slate-50">
-            <p class="pb-2 text-center uppercase text-brand text-sm">The Keepers promise</p>
-            <h2 class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-16 max-w-lg">
-                To protect <mark>your privacy</mark> and remain faithful to <mark>our&nbsp;principles</mark>
-            </h2>
-
-            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 md:gap-6 max-w-5xl lg:mx-auto">
-                <section class="prose my-4 max-w-md lg:max-w-lg lg:px-8">
-                    <img loading="lazy" class="float-left mb-24 w-28 lg:w-36 pr-5" src="/assets/promise-team-3f6647d2.webp" width="128" height="128" />
-                    <p class="mt-0 max-w-prose">
-                        The team of parents creating Keepers know how precious your photos and videos
-                        are. We are firmly committed to keeping your families' memories <mark>safe &amp;
-                        secure</mark>.
-                    </p>
-                </section>
-
-                <section class="prose my-4 max-w-md lg:max-w-lg lg:px-8">
-                    <img loading="lazy" class="float-left mb-12 pr-4 w-28 lg:w-36" src="/assets/promise-care-2eb38f19.webp" width="128" height="128" />
-                    <p class="mt-0 max-w-prose">
-                        We want Keepers to be the guardian of your family
-                        memories. We charge a subscription fee to earn our living.
-                        We won’t sell your data or your privacy. 
-                    </p>
-                </section>
-
-                <section class="prose my-4 max-w-md lg:max-w-lg lg:px-8">
-                    <img loading="lazy" class="float-left mb-16 my-0 w-28 lg:w-36 mt-3 pr-5" src="/assets/promise-b-corp-5ca37ece.webp"  width="128" height="128"/>
-                    <p class="mt-0 max-w-prose">
-                        We are becoming a Benefit corporation. It is a for profit 
-                        company with a legal mandate to make decisions
-                        that <mark>benefit society as well as the&nbsp;shareholders</mark>.
-                    </p>
-                </section>
-
-                <section class="prose my-4 max-w-md lg:max-w-lg lg:px-8">
-                    <img loading="lazy" class="float-left mb-24 w-28 lg:w-36 pr-5" src="/assets/promise-1-percent-d8b7d362.webp" width="128" height="128" />
-                    <p class="mt-0  max-w-prose">
-                        We want <mark>our children and their children</mark> to enjoy 
-                        this beautiful blue planet.  We commit to the 1% for the
-                        planet scheme and hope to go further when we can.
-                    </p>
-                </section>
-            </div>
-        </div>
-
-
-        <div id="testimonials" class="mt-10 px-6 py-12 md:py-20">
-            <p class="pb-2 px-6 text-center uppercase text-brand text-sm">So does it work?</p>
-            <h2 class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl md:max-w-lg mb-12 ">
-                We asked our early testing parents what they thought of Keepers
-            </h2>
-
-            <div class="py-8 grid md:grid-cols-3 md:grid-gap-8">
-                <section class="pb-12 md:px-4 lg:px-8">
-                    <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center aspect-video" src="/assets/testimonial-laura-40d73980.webp" width="250" height="141" />
-                    <p class="prose font-semibold">Laura, TV producer</p>
-                    <blockquote class="prose mt-2 mb-3 text-black">
-                        &ldquo; People expect a TV producer to have their photos
-                        organised. I didn't! My family photos were mixed up with
-                        thousands of work photos and screenshots. <mark>But this app did
-                        all of the work</mark>. No more scrolling for me!&rdquo;
-                    </blockquote>
-                </section>
-
-                <section class="pb-12 md:px-4 lg:px-8">
-                    <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center aspect-video" src="/assets/testimonial-tash-484aa05e.webp" width="250" height="141" />
-                    <p class="prose font-semibold">Tash, Dentist</p>
-                    <blockquote class="prose mt-2 mb-3 text-black">
-                        &ldquo; I love the Flaskback feature.
-                        Seeing images from ages ago
-                        <mark>brought such a smile to my face</mark>. I won't
-                        worry about losing photos in the future. &rdquo;
-                    </blockquote>
-                </section>
-
-                <section class="pb-12 px-2 md:px-4 lg:px-8">
-                    <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center aspect-video" src="/assets/testimonial-jay-575a09b9.webp" width="250" height="141" />
-                    <p class="prose font-semibold">Jay, SAHM</p>
-                    <blockquote class="prose mt-2 mb-3 text-black">
-                        &ldquo; I don't use many apps, and a friend convinced me
-                        to help test Keepers. It was so much better than I
-                        expected.  I even made a photo book during my kid's gym
-                        class.  <mark>I love how fast &amp; easy it is</mark>.&rdquo;
-                    </blockquote>
-                </section>
-            </div>
-        </div>
-
-        <div id="call-to-action-second" class="mx-auto w-full mt-12 pt-[55vw] md:pt-[50vh] lg:pt-[50vh] px-4 sm:px-6 lg:px-8 pb-4 text-center bg-cover bg-top bg-no-repeat" 
-        style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/exciting-mum-and-daughter-taking-a-selfie-b9c6c804.webp)">
-            <div class="text-center pt-10 px-4 sm:px-6 mx:px-8"> 
-                <img loading="lazy" src="data:image/webp;base64,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" width="67" height="67" class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto">
-                <span class="font-headline font-black tracking-wide lowercase text-xl lg:text-3xl text-slate-50">Keepers</span>
-            </div>
-            <!--<h2 class="mx-auto mt-64 text-center font-headline font-black text-2xl md:text-5xl leading-snug tracking-wide text-slate-200">keepers</h2> -->
-            <h2 class="mx-auto mt-6 text-center font-headline font-black text-2xl md:text-5xl leading-snug tracking-wide text-slate-200">Declutter Your Family Photos Now</h2>
-            <p class="prose mx-auto text-center text-slate-50 md:text-xl lg:text-2xl max-w-lg my-10 ">
-              We'd love you to join the Keepers Family, download the app today!
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <section class="py-10 md:px-2 lg:px-10">
+          <div
+            class="text-center prose text-lg font-headline font-black pb-3 text-brand-teal"
+          >
+            We love taking photos...
+          </div>
+          <img
+            loading="lazy"
+            class="mx-auto w-2/3 pb-3"
+            src="/assets/problem-statement-new-born-baby-3f7c476e.webp"
+            width="167"
+            height="167"
+          />
+          <div class="prose px-3">
+            <p>
+              Who can resist, your kids are so cute. You've
+              <span>captured every moment</span> on your phone. Then you sorted,
+              shared and maybe even printed them.
             </p>
-            <div class="mt-10 mb-20 flex justify-center gap-x-6">
-                <div class="mx-auto mt-12 md:md-8 text-center pb-8 flex justify-center justify-items-center justify-self-center">
-                  <a href="javascript:void(0)" onclick="trackAppstoreClick()"><img class="h-[46px] md:h-[54px] mx-2 md:mx-4" src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg" /></a>
-                  <a href="javascript:void(0)" onclick="openGooglePlayPopup()"><img class="h-[46px] md:h-[52px] mx-2 md:mx-4" src="/assets/Google_Play_Store_badge_EN-b1c3a8f0.svg" /></a>
-                </div>
-            </div>
-            <div class="my-4 flex justify-center gap-x-6 text-white text-small">
-              <p>
-                For feedback, issues &amp; requests, please email us at <a href="mailto:contact@keepers.photos">contact@keepers.photos</a>.
-                Our physical address is 26 Bath Street, Dunedin, Otago, New Zealand. Our contact number is (64)21-0822-3483.
-                If you read this far, you might as well check out our <a href="/privacy.html">Privacy policy</a>. You're happy now? Good.
-              </p>
-            </div>
+          </div>
+        </section>
+
+        <section class="py-10 md:px-2 lg:px-10">
+          <div
+            class="text-center prose text-lg font-headline font-black pb-3 text-brand-teal"
+          >
+            The photo mountain grows...
+          </div>
+          <img
+            loading="lazy"
+            class="mx-auto w-2/3 pb-5"
+            src="/assets/problem-statement-overwhelmed-by-photos-581cae9e.webp"
+            width="167"
+            height="167"
+          />
+          <div class="prose px-3">
+            <p>
+              But time passes, now you have tens of thousands of pictures in
+              your unorganised photo pile. You
+              <span class="">began the endless scrolling</span>, knowing that
+              some great moments are lost forever.
+            </p>
+          </div>
+        </section>
+
+        <section class="py-10 md:px-2 lg:px-10">
+          <div
+            class="text-center prose text-lg font-headline font-black pb-3 text-brand-teal"
+          >
+            Keepers to the rescue!
+          </div>
+          <img
+            loading="lazy"
+            class="mx-auto w-2/3 pb-5"
+            src="/assets/problem-statement-photos-printed-2f5f615e.webp"
+            width="167"
+            height="167"
+          />
+          <div class="prose px-3">
+            <p>
+              So we've designed an app that <span>combats the stress</span>. By
+              helping you curate photos, and create wonderful photobooks, we'll
+              give you these precious memories back.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="feature-walkthrough" class="bg-slate-50">
+      <div class="py-12 bg-content bg-bottom bg-no-repeat">
+        <p class="px-6 text-center uppercase text-brand text-sm">
+          Let our AI do the chores
+        </p>
+        <p
+          class="px-6 mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl max-w-lg"
+        >
+          In a few simple steps, go from overwhelmed to&nbsp;overjoyed!
+        </p>
+      </div>
+
+      <div class="px-6 w-max-md grid grid-cols-1 lg:grid-cols-3">
+        <section class="my-12 w-full">
+          <p class="prose font-headline text-left font-bold text-brand-teal">
+            Review only the best ones
+          </p>
+          <p class="prose mb-4 mr-8">
+            Keepers group visually similar photos and let our AI suggest the
+            best shot, so you can quickly get to the photo you had in mind. To
+            view the other photos in the group, simply double tap.
+          </p>
+          <img
+            class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl"
+            src="/assets/review-only-the-best-ones-b98bd7aa.gif"
+          />
+        </section>
+
+        <section class="my-12 w-full">
+          <p class="prose font-headline text-left font-bold text-brand-teal">
+            Watch the pages come to life
+          </p>
+          <p class="prose mb-4 mr-8">
+            Once you've selected the photos, Keepers' AI will
+            <span>automatically</span> lay them out on the pages for you. Photos
+            of the same scene will be put together. The best shots highlighted.
+            You can then make changes as you see fit.
+          </p>
+          <img
+            class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl"
+            src="/assets/watch-the-pages-come-to-life-42111829.gif"
+          />
+        </section>
+
+        <section class="mt-12 w-full">
+          <p class="prose font-headline text-left font-bold text-brand-teal">
+            Swipe to choose beautiful layouts
+          </p>
+          <p class="prose mb-4 mr-8">
+            We have hand curated a rich and tasteful collection of layout
+            templates. You can simply swipe through different options until you
+            find the one that works best for the photos you've chosen for a
+            page.
+          </p>
+          <img
+            class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl"
+            src="/assets/swipe-to-choose-beautiful-layout-0f98e5bc.gif"
+          />
+        </section>
+
+        <section class="my-12 w-full">
+          <p class="prose font-headline text-left font-bold text-brand-teal">
+            Design fast without losing control
+          </p>
+          <p class="prose mb-4 mr-8">
+            We have designed an intuitive
+            <span class="whitespace-nowrap">drag-and-drop</span> interface for
+            the most common tasks. And provide the rest control via
+            task-specific toolbars for the rest essential but less frequent
+            ones.
+          </p>
+          <img
+            class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl"
+            src="/assets/design-fast-without-losing-control-2c0b063d.gif"
+          />
+        </section>
+
+        <section class="mt-12 w-full">
+          <p class="prose font-headline text-left font-bold text-brand-teal">
+            Cover design for each occasion
+          </p>
+          <p class="prose mb-4 mr-8">
+            Whether you are designing a fun-and-bright book for your kid's
+            birthday, or a more elegant one for the grandparents, we offer a
+            great selection of cover design options for you to choose from.
+          </p>
+          <img
+            class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl"
+            src="/assets/cover-design-for-each-occasion-bc37fc77.gif"
+          />
+        </section>
+
+        <section class="my-12 w-full">
+          <p class="prose font-headline text-left font-bold text-brand-teal">
+            Curate memories as you go
+          </p>
+          <p class="prose mb-4 mr-8">
+            Choosing the best photos for a book can take a while. With the
+            Keepers home screen widget, you can enjoy the fruits of the curation
+            process every time you look at your screen as the book gradually
+            takes shape.
+          </p>
+          <img
+            class="lazy w-2/3 md:w-1/2 mx-auto lg:mx-0 rounded-2xl"
+            src="/assets/cover-design-for-each-occasion-bc37fc77.gif"
+          />
+        </section>
+      </div>
+    </div>
+
+    <div
+      id="books"
+      class="px-2 py-24 text-gray-900 bg-origin-padding border-8 border-transparent bg-contain bg-right-bottom bg-no-repeat"
+    >
+      <h2
+        class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-16 max-w-lg"
+      >
+        Meet the Books
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <section class="mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
+          <p class="font-headline font-semibold text-brand-teal text-xl">
+            Premium soft cover books
+          </p>
+          <p class="prose text-black">
+            Each book is measured at 20x20cm, roughly the width of an A4 paper.
+            Price starts from $37.95. This base price include a generous 50
+            pages, then $0.35 per extra page.
+          </p>
+          <img
+            loading="lazy"
+            class="rounded-xl mt-2 mb-3 w-full object-cover object-center"
+            src="/assets/book-content-b5015c33.webp"
+            width="250"
+            height="250"
+          />
+        </section>
+
+        <section class="mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
+          <p class="font-headline font-semibold text-brand-teal text-xl">
+            True to life colours
+          </p>
+          <p class="prose font-normal text-black">
+            All our books are made using premium quality 100% recycled paper
+            stock. The book cover uses heavy-weight satin paper. The interior
+            pages have a magazine-quality matte finish.
+          </p>
+          <img
+            loading="lazy"
+            class="rounded-xl mt-2 mb-3 w-full object-cover object-center"
+            src="/assets/book-cover-aac9234f.webp"
+            width="250"
+            height="250"
+          />
+        </section>
+
+        <section class="mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
+          <p class="font-headline font-semibold text-brand-teal text-xl">
+            Durable Binding
+          </p>
+          <p class="prose font-normal text-black">
+            The pages are bound together using strong yet flexible glue, then
+            trimmed with a sharp, crispy and neatly finish. Please note that the
+            binding does not allow the book to lay flat.
+          </p>
+          <img
+            loading="lazy"
+            class="rounded-xl mt-2 mb-3 w-full object-cover object-center"
+            src="/assets/book-binding-d1823495.webp"
+            width="250"
+            height="250"
+          />
+        </section>
+      </div>
+    </div>
+
+    <div
+      id="faq"
+      class="px-2 py-24 text-gray-900 bg-origin-padding border-8 border-transparent bg-contain bg-right-bottom bg-no-repeat bg-slate-50"
+    >
+      <h2
+        class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-16 max-w-lg"
+      >
+        Frequent Asked Questions
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <section class="prose mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
+          <p class="prose font-headline font-semibold text-brand-teal text-xl">
+            How about my live photos and videos?
+          </p>
+          <p class="prose font-normal text-black">
+            You can still print them as still photos. iOS' Photos will
+            automatically pick a frame to repsent the video, which we use as the
+            photo.
+          </p>
+        </section>
+
+        <section class="prose mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
+          <p
+            class="prose font-headline font-semibold text-brand-teal text-xl mb-4"
+          >
+            Do you offer hard cover books or lay flat books?
+          </p>
+          <p class="prose font-normal text-black">
+            Not yet. We are expecting to offer hard cover books in the next few
+            months. Lay flat books and cloth-covered books will take a bit
+            longer.
+          </p>
+        </section>
+
+        <section class="prose mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
+          <p
+            class="prose font-headline font-semibold text-brand-teal text-xl mb-4"
+          >
+            I have downloaded Keepers and have a technical question. How do I
+            get in contact with you?
+          </p>
+          <p class="prose font-normal text-black">
+            Please reach us at
+            <a href="mailto:info@keepers.photos">info@keepers.photos</a>. We'd
+            love to help.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <div
+      id="mission"
+      class="px-6 py-24 text-gray-900 bg-origin-padding border-8 border-transparent bg-contain bg-right-bottom bg-no-repeat"
+    >
+      <p class="pb-2 text-center uppercase text-brand text-sm">
+        The Keepers promise
+      </p>
+      <h2
+        class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-16 max-w-lg"
+      >
+        To protect <span>your privacy</span> and remain faithful to
+        our&nbsp;principles
+      </h2>
+
+      <div
+        class="mt-16 grid grid-cols-1 md:grid-cols-3 md:gap-6 max-w-5xl lg:mx-auto"
+      >
+        <section class="my-4 max-w-md lg:max-w-lg lg:px-8">
+          <img
+            loading="lazy"
+            class="float-left w-28 lg:w-36 pr-5"
+            src="/assets/promise-team-3f6647d2.webp"
+            width="100"
+            height="100"
+          />
+          <p class="mt-0 max-w-prose">
+            The team of parents creating Keepers know how precious your memories
+            are. We are firmly committed to keeping your families' memories
+            <span>safe &amp; secure</span>.
+          </p>
+        </section>
+
+        <section class="my-4 max-w-md lg:max-w-lg lg:px-8">
+          <img
+            loading="lazy"
+            class="float-left w-28 lg:w-36 mt-3 pr-5"
+            src="/assets/promise-b-corp-5ca37ece.webp"
+            width="100"
+            height="100"
+          />
+          <p class="mt-0 max-w-prose">
+            We are becoming a Benefit corporation. It is a for profit company
+            with a legal mandate to make decisions that
+            <span>benefit society as well as the&nbsp;shareholders</span>.
+          </p>
+        </section>
+
+        <section class="my-4 max-w-md lg:max-w-lg lg:px-8">
+          <img
+            loading="lazy"
+            class="float-left w-28 lg:w-36 pr-5"
+            src="/assets/promise-1-percent-d8b7d362.webp"
+            width="100"
+            height="100"
+          />
+          <p class="mt-0 max-w-prose">
+            We want <span>our children and their children</span> to enjoy this
+            beautiful blue planet. We commit to the 1% for the planet scheme and
+            hope to go further when we can.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <div id="testimonials" class="mt-10 px-6 py-12 md:py-20 bg-slate-50">
+      <p class="pb-2 px-6 text-center uppercase text-brand text-sm">
+        So does it work?
+      </p>
+      <h2
+        class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl md:max-w-lg mb-12"
+      >
+        We asked our early testing parents what they thought of Keepers
+      </h2>
+
+      <div class="py-8 grid md:grid-cols-3 md:grid-gap-8">
+        <section class="pb-12 md:px-4 lg:px-8">
+          <img
+            loading="lazy"
+            class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
+            src="/assets/testimonial-laura-40d73980.webp"
+            width="250"
+            height="141"
+          />
+          <p class="prose font-semibold">Laura, TV producer</p>
+          <blockquote class="prose mt-2 mb-3 text-black">
+            &ldquo; My family photos were mixed up with thousands of work photos
+            and screenshots. Keepers makes it so easy to find the photos I was
+            looking for.&rdquo;
+          </blockquote>
+        </section>
+
+        <section class="pb-12 md:px-4 lg:px-8">
+          <img
+            loading="lazy"
+            class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
+            src="/assets/testimonial-tash-484aa05e.webp"
+            width="250"
+            height="141"
+          />
+          <p class="prose font-semibold">Tash, Dentist</p>
+          <blockquote class="prose mt-2 mb-3 text-black">
+            &ldquo; I love the widget! Seeing images from ages ago
+            <span>brought such a smile to my face</span>. I won't worry about
+            losing photos in the future.&rdquo;
+          </blockquote>
+        </section>
+
+        <section class="pb-12 px-2 md:px-4 lg:px-8">
+          <img
+            loading="lazy"
+            class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
+            src="/assets/testimonial-jay-575a09b9.webp"
+            width="250"
+            height="141"
+          />
+          <p class="prose font-semibold">Jay, SAHM</p>
+          <blockquote class="prose mt-2 mb-3 text-black">
+            &ldquo; I don't use many apps, and a friend convinced me to help
+            test Keepers. It was so much better than I expected. I even made a
+            photo book during my kid's gym class. 
+            <span>I love how fast &amp; easy it is</span>.&rdquo;
+          </blockquote>
+        </section>
+      </div>
+    </div>
+
+    <div
+      id="call-to-action-second"
+      class="mx-auto w-full pt-20 px-4 sm:px-6 lg:px-8 pb-4 text-center bg-cover bg-top bg-no-repeat"
+      style="
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(/assets/exciting-mum-and-daughter-taking-a-selfie-b9c6c804.webp);
+      "
+    >
+      <p class="mt-[30vh] mx-auto text-center text-white max-w-lg">
+        We'd love you to join the Keepers Family. Download the app&nbsp;today!
+      </p>
+      <div class="mb-20 flex justify-center gap-x-6">
+        <div
+          class="mx-auto mt-8 text-center flex justify-center justify-items-center justify-self-center"
+        >
+          <a href="javascript:void(0)" onclick="trackAppstoreClick()"
+            ><img
+              class="h-[40px] mx-2 mr-2"
+              src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg"
+          /></a>
+          <a href="javascript:void(0)" onclick="openGooglePlayPopup()"
+            ><img
+              class="h-[40px] mx-2 ml-2"
+              src="/assets/Google_Play_Store_badge_EN-b1c3a8f0.svg"
+          /></a>
         </div>
-        <!-- Facebook Pixel Code -->
-        <script>
-            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); 
-            fbq('init', '875415683448386'); 
-            fbq('track', 'PageView');
-
-
-            var button = document.getElementById('signUpButton');
-            button.addEventListener('click', function() { 
-                fbq('track', 'lead'); 
-            }, false);
-        </script>
-        <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=875415683448386&ev=PageView&noscript=1"/></noscript><!-- End Facebook Pixel Code -->
-    </body>
-    <script type="text/javascript">
-      function openGooglePlayPopup() { document.getElementById("googlePlayPopup").className = ''; }
-      function closeGooglePlayPopup() { document.getElementById("googlePlayPopup").className = 'hidden'; }
-
-      const wishlistData = () => {
-        return {
-          email: "",
-          successMsg: "",
-          errorMsg: "",
-          loading: false,
-          submitted: false,
-          init: function() {
-            this.email = "";
-            this.errorMsg = "";
-            this.successMsg = "";
-            this.loading = false;
-            this.submitted = false;
-          },
-          addWishlist: function() {
-            this.successMsg = "";
-            this.errorMsg = "";
-            this.loading = true;
-            if (this.email) {
-              return fetch("https://api.keepers.photos/functions/v1/wishlist", {
-                method: "POST",
-                headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({email: this.email})
-              }).then((resp) => { return resp.json() })
-                .then((data) => {
-                  this.loading = false;
-                  if (data.success) {
-                    this.successMsg = "Thanks for your submitting!<br /> We'll contact you as soon as possible.";
-                    this.submitted = true;
-                    setTimeout(() => {
-                      this.init();
-                      closeGooglePlayPopup();
-                    }, 3000);
-                  } else {
-                    this.errorMsg = data.reason;
-                  }
-                })
-            } else {
-              this.errorMsg = "Invalid Email Address";
-              this.loading = false;
-            }
-          }
-        }
-      }
-
-      function trackAppstoreClick(e) {
-        gtag('event', 'click', {
-          'event_category': 'appstore',
-          'event_label': 'Apple App Store',
-        });
-        location.href = "https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575";
-      }
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NWW0S42FC"></script>
+      </div>
+      <div class="my-4 flex justify-center gap-x-6 text-slate-100 text-sm">
+        <p>
+          For feedback, issues &amp; requests, please email us at
+          <a href="mailto:contact@keepers.photos">contact@keepers.photos</a>.
+          Our physical address is 26 Bath Street, Dunedin, Otago, New Zealand.
+          Our contact number is (64)21-0822-3483. If you read this far, you
+          might as well check out our
+          <a href="/privacy.html">Privacy policy</a>. You're happy now? Good.
+        </p>
+      </div>
+    </div>
+    <!-- Facebook Pixel Code -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "875415683448386");
+      fbq("track", "PageView");
 
-      gtag('config', 'G-0NWW0S42FC');
+      var button = document.getElementById("signUpButton");
+      button.addEventListener(
+        "click",
+        function () {
+          fbq("track", "lead");
+        },
+        false
+      );
     </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=875415683448386&ev=PageView&noscript=1" /></noscript
+    ><!-- End Facebook Pixel Code -->
+  </body>
+  <script type="text/javascript">
+    function openGooglePlayPopup() {
+      document.getElementById("googlePlayPopup").className = "";
+    }
+    function closeGooglePlayPopup() {
+      document.getElementById("googlePlayPopup").className = "hidden";
+    }
 
+    const wishlistData = () => {
+      return {
+        email: "",
+        successMsg: "",
+        errorMsg: "",
+        loading: false,
+        submitted: false,
+        init: function () {
+          this.email = "";
+          this.errorMsg = "";
+          this.successMsg = "";
+          this.loading = false;
+          this.submitted = false;
+        },
+        addWishlist: function () {
+          this.successMsg = "";
+          this.errorMsg = "";
+          this.loading = true;
+          if (this.email) {
+            return fetch("https://api.keepers.photos/functions/v1/wishlist", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email: this.email }),
+            })
+              .then((resp) => {
+                return resp.json();
+              })
+              .then((data) => {
+                this.loading = false;
+                if (data.success) {
+                  this.successMsg =
+                    "Thanks for your submitting!<br /> We'll contact you as soon as possible.";
+                  this.submitted = true;
+                  setTimeout(() => {
+                    this.init();
+                    closeGooglePlayPopup();
+                  }, 3000);
+                } else {
+                  this.errorMsg = data.reason;
+                }
+              });
+          } else {
+            this.errorMsg = "Invalid Email Address";
+            this.loading = false;
+          }
+        },
+      };
+    };
+
+    function trackAppstoreClick(e) {
+      gtag("event", "click", {
+        event_category: "appstore",
+        event_label: "Apple App Store",
+      });
+      location.href =
+        "https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575";
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-0NWW0S42FC"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-0NWW0S42FC");
+  </script>
 </html>
