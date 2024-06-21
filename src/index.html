@@ -274,14 +274,39 @@
         </section>
       </div>
 
-      <div class="flex justify-center gap-x-6">
-        <a href="javascript:void(0)" onclick="trackAppstoreClick()" >
+      <!-- Three screenshots. Same row for desktop; one per row for mobile. -->
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <section class="py-4 md:px-2 lg:px-10">
           <img
             loading="lazy"
-            class="mx-auto w-full object-cover object-center"
-            src="img/app_screenshot.webp"
-            height="70vh" />
+            class="rounded-xl mb-3 w-full object-cover object-center"
+            src="img/screenshot-ai_curated_library.jpeg"
+            width="250"
+            height="541"
+          />
+        </section>
+        <section class="py-4 md:px-2 lg:px-10">
+          <img
+            loading="lazy"
+            class="rounded-xl mb-3 w-full object-cover object-center"
+            src="img/screenshot-page_designer.jpeg"
+            width="250"
+            height="541"
+          />
+        </section>
+        <section class="py-4 md:px-2 lg:px-10">
+          <img
+            loading="lazy"
+            class="rounded-xl mb-3 w-full object-cover object-center"
+            src="img/screenshot-book_pages.jpg"
+            width="250"
+            height="541"
+          />
+        </section>
+      </div>
 
+      <div class="flex justify-center gap-x-6">
+        <a href="javascript:void(0)" onclick="trackAppstoreClick()" >
           <img
               loading="lazy"
               class="mx-auto h-[60px] object-center"
@@ -317,7 +342,7 @@
           <p class="prose mb-4 mr-8">
             Each book is measured at 20x20cm, roughly the width of an A4 paper.
             Price starts from $39.95. This base price include a generous 40
-            pages, then $1.00 per extra page.
+            pages, then $0.50 per extra page.
           </p>
           <img
             loading="lazy"
