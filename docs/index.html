@@ -127,120 +127,9 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <link rel="stylesheet" href="/assets/tailwind-d78054c4.css">
+    <link rel="stylesheet" href="/assets/tailwind-e1e3e53f.css">
   </head>
   <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
-    <!--
-    <div id="googlePlayPopup" class="hidden">
-      <div
-        id=""
-        class="relative z-10"
-        aria-labelledby="modal-title"
-        role="dialog"
-        aria-modal="true"
-      >
-        <div
-          class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"
-        ></div>
-        <div class="fixed inset-0 z-10 overflow-y-auto">
-          <div
-            class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
-          >
-            <div
-              class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6"
-            >
-              <div>
-                <div class="mt-3 text-center sm:mt-5">
-                  <h3
-                    class="text-base font-semibold leading-6 text-gray-900"
-                    id="modal-title"
-                  ></h3>
-                  <div class="mt-2">
-                    <p class="text-sm text-gray-800">
-                      We haven’t released the Android version yet but shall do
-                      soon. Please leave your email address to get notified.
-                    </p>
-
-                    <form
-                      class=""
-                      @submit.prevent="addWishlist()"
-                      x-data="wishlistData()"
-                    >
-                      <div
-                        class="mt-3 sm:flex sm:items-center"
-                        x-show="!submitted"
-                      >
-                        <div class="w-full sm:max-w-xs">
-                          <label for="email" class="sr-only">Email</label>
-                          <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                            placeholder="you@example.com"
-                            x-model="email"
-                          />
-                        </div>
-                        <button
-                          type="submit"
-                          class="mt-3 inline-flex w-full items-center justify-center rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:ml-3 sm:mt-0 sm:w-auto"
-                          :class="loading ? 'bg-pink-200 hover-bg-pink-200 focus-visible:outline-pink-200' : 'bg-pink-400 hover-bg-pink-400 focus-visible:outline-pink-400'"
-                          x-bind:disabled="loading"
-                        >
-                          <svg
-                            class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            x-show="loading"
-                          >
-                            <circle
-                              class="opacity-25"
-                              cx="12"
-                              cy="12"
-                              r="10"
-                              stroke="currentColor"
-                              stroke-width="4"
-                            ></circle>
-                            <path
-                              class="opacity-75"
-                              fill="currentColor"
-                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                            ></path>
-                          </svg>
-                          Save
-                        </button>
-                      </div>
-                      <p
-                        class="w-full pt-2 text-green-500 text-sm"
-                        x-show="!!successMsg"
-                        x-html="successMsg"
-                      ></p>
-                      <p
-                        class="w-full pt-2 text-pink-700 test-sm"
-                        x-show="!!errorMsg"
-                        x-text="errorMsg"
-                      ></p>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-4 sm:mt-4">
-                <button
-                  type="button"
-                  class="inline-flex w-full justify-center rounded-md bg-gray-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
-                  onclick="closeGooglePlayPopup()"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
-
     <div id="first-fold" class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/photo-of-mum-daughter-in-bedroom-tent-cbe198e0.webp);">
       <div class="text-center pt-10 pb-12 px-4 sm:px-6 mx:px-8">
         <p class="mx-auto mt-4 text-white">
@@ -357,14 +246,6 @@
               src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg"
               />
         </a>
-
-            <!--
-            <a href="javascript:void(0)" onclick="openGooglePlayPopup()"
-              ><img
-                class="h-[40px] mx-2 ml-2"
-                src="img/Google_Play_Store_badge_EN.svg"
-            /></a>
-            -->
       </div>
     </div>
 
@@ -742,10 +623,7 @@
     };
 
     function trackAppstoreClick(e) {
-      gtag("event", "click", {
-        event_category: "appstore",
-        event_label: "Apple App Store",
-      });
+      gtag('event', 'conversion', {'send_to': 'AW-11025263890/Yq1FCJy1mL4ZEJLaoIkp'});
       location.href =
         "https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575";
     }
