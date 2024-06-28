@@ -54,11 +54,80 @@
         font-stretch: normal;
       }
     </style>
+
+<style>
+.device-wrap {
+  position: relative;
+  margin: 0 auto;
+}
+
+  .device-iphone-15-pro {
+    width: 282px;
+    height: 576px;
+  }
+
+  .device-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/iphone15pro_frame-a3a905d8.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .device-screen {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    width: 256px;
+    height: 555px;
+    overflow: hidden;
+    border-radius: 38px;
+  }
+
+  .device-screen img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  @media only screen and (max-width: 1068px) {
+    .device-iphone-15-pro {
+      width: 212px;
+      height: 433px;
+    }
+
+    .device-screen {
+      top: 9px;
+      left: 10px;
+      width: 192px;
+      height: 416px;
+    }
+  }
+
+  @media only screen and (max-width: 734px) {
+    .device-iphone-15-pro {
+      width: 141px;
+      height: 288px;
+    }
+
+    .device-screen {
+      top: 5px;
+      left: 6px;
+      width: 128px;
+      height: 277px;
+    }
+  }
+</style>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <link rel="stylesheet" href="/assets/tailwind-abb4a473.css">
+    <link rel="stylesheet" href="/assets/tailwind-d78054c4.css">
   </head>
   <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
     <!--
@@ -172,70 +241,41 @@
     </div>
     -->
 
-    <div
-      id="first-fold"
-      class="h-screen pb-10 bg-cover bg-top bg-no-repeat"
-      style="
-        background-image: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url(/assets/photo-of-mum-daughter-in-bedroom-tent-cbe198e0.webp);
-      "
-    >
+    <div id="first-fold" class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/photo-of-mum-daughter-in-bedroom-tent-cbe198e0.webp);">
       <div class="text-center pt-10 pb-12 px-4 sm:px-6 mx:px-8">
         <p class="mx-auto mt-4 text-white">
         <b>Some memories are beyond precious</b><br/>
         Let us help you hold on to them forever
         </p>
       </div>
-      <div
-        id="first-fold"
-        class="mx-auto lg:max-w-3xl md:max-w-xl mt-12 pt-[32vh] px-8 pb-16 text-center"
-      >
-        <!--
-        <h1
-          class="mx-auto max-w-3xl font-headline text-md text-slate-200"
-        >
-        </h1>
-        -->
+
+      <div class="flex-grow"></div>
+
+      <div class="bottom-content text-center px-8 mb-12 md:mb-18 lg:mb-24">
         <img
-          loading="lazy"
-          src="data:image/webp;base64,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"
-          width="67"
-          height="67"
-          class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto"
-        />
+            loading="lazy"
+            src="data:image/webp;base64,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"
+            width="67"
+            height="67"
+            class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto"
+            />
         <span class="font-black text-xl text-white lowercase">Keepers</span>
         <br/>
-        <span
-          class="font-headline tracking-wide text-white"
-          >
+        <span class="font-headline tracking-wide text-white">
           Photobook Designer
         </span>
 
-        <div class="flex justify-center gap-x-6">
-          <div
-            class="mx-auto mt-2 text-center flex justify-center justify-items-center justify-self-center"
-          >
-            <a href="javascript:void(0)" onclick="trackAppstoreClick()"
-              ><img
-                class="h-[40px] mt-1 mx-2 mr-2"
+        <div class="flex justify-center gap-x-6 mt-4">
+          <a href="javascript:void(0)" onclick="trackAppstoreClick()">
+            <img
+                class="h-[60px] mx-2"
                 src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg"
-            /></a>
-
-            <!--
-            <a href="javascript:void(0)" onclick="openGooglePlayPopup()"
-              ><img
-                class="h-[40px] mx-2 ml-2"
-                src="img/Google_Play_Store_badge_EN.svg"
-            /></a>
-            -->
-          </div>
+                />
+          </a>
         </div>
       </div>
     </div>
+
 
     <div id="problem-statement" class="py-24 px-6 bg-slate-50">
       <h2
@@ -245,11 +285,10 @@
         <!--<span class="text-brand">And how Keepers can&nbsp;help.</span> -->
         And how Keepers can&nbsp;help.
       </h2>
-      <p class="pb-2 text-center text-brand">
-      </p>
 
       <div class="grid grid-cols-1 md:grid-cols-3">
-        <section class="prose py-4 md:px-2 lg:px-10">
+        <section class="py-4 md:px-2 lg:px-10">
+          <div class="prose mb-8">
           <span class="">
             80% said it's too slow to find the right photos.
           </span>
@@ -259,54 +298,58 @@
           <span class="">
           Photos taken together will be grouped together so you can get to the photo you want quickly.
           </span>
+          </div>
+
+          <div class="device-wrap device-iphone-15-pro mt-4">
+            <div class="device-screen">
+              <img loading="lazy" 
+                class="rounded-xl mb-3 w-full object-cover object-center"
+                src="/assets/screenshot-ai_curated_library-e45355dd.webp"
+                alt="AI Curated Library Screenshot">
+            </div>
+            <div class="device-frame"></div>
+          </div>
         </section>
-        <section class="prose py-4 md:px-2 lg:px-10">
+        <section class="py-4 md:px-2 lg:px-10">
+          <div class="prose mb-8">
           <span class="">
              72% told us it was too laborious.
           </span>
           <b class="">Let Keepers Page Layout AI 
             <span class="text-brand">create your first draft</span>. </b>
-          Keepers analyses your photos and recommend the right layouts for them. Taking you 90% on your photobook journey. 
+          Keepers analyses your photos and recommend the right layouts for them. Taking you 95% on your photobook journey. 
+          </div>
+
+          <div class="device-wrap device-iphone-15-pro mt-4">
+            <div class="device-screen">
+              <img loading="lazy" 
+                class="rounded-xl mb-3 w-full object-cover object-center"
+                src="/assets/screenshot-page_designer-f18748c7.webp"
+                alt="AI Curated Library Screenshot">
+            </div>
+            <div class="device-frame"></div>
+          </div>
         </section>
-        <section class="prose py-4 md:px-2 lg:px-10">
+        <section class="py-4 md:px-2 lg:px-10">
+          <div class="prose mb-8">
           <span>68% felt that the process was too fiddly. </span>
-          <b>Keepers comes with a <b class="text-brand">tailor-made toolkit</b> that helps you finish your book faster.</b>
-            Whether it’s trying out different templates, rearranging photos or enhancing the images, we’ve got you covered.
+          <b>Keepers is <b class="text-brand">designed from scratch</b> to help you finish your book faster.</b>
+            Whether it’s trying out different templates or rearranging photos, we’ve got you covered.
+          </div>
+
+          <div class="device-wrap device-iphone-15-pro mt-4">
+            <div class="device-screen">
+              <img loading="lazy" 
+                class="rounded-xl mb-3 w-full object-cover object-center"
+                src="/assets/screenshot-book_pages-377836fc.webp"
+                alt="AI Curated Library Screenshot">
+            </div>
+            <div class="device-frame"></div>
+          </div>
         </section>
       </div>
 
-      <!-- Three screenshots. Same row for desktop; one per row for mobile. -->
-      <div class="grid grid-cols-1 md:grid-cols-3">
-        <section class="py-4 md:px-2 lg:px-10">
-          <img
-            loading="lazy"
-            class="rounded-xl mb-3 w-full object-cover object-center"
-            src="/assets/screenshot-ai_curated_library-dc4573c4.jpeg"
-            width="250"
-            height="541"
-          />
-        </section>
-        <section class="py-4 md:px-2 lg:px-10">
-          <img
-            loading="lazy"
-            class="rounded-xl mb-3 w-full object-cover object-center"
-            src="/assets/screenshot-page_designer-923858e0.jpeg"
-            width="250"
-            height="541"
-          />
-        </section>
-        <section class="py-4 md:px-2 lg:px-10">
-          <img
-            loading="lazy"
-            class="rounded-xl mb-3 w-full object-cover object-center"
-            src="/assets/screenshot-book_pages-f088ebb1.jpg"
-            width="250"
-            height="541"
-          />
-        </section>
-      </div>
-
-      <div class="flex justify-center gap-x-6">
+      <div class="flex justify-center gap-x-6 mt-12">
         <a href="javascript:void(0)" onclick="trackAppstoreClick()" >
           <img
               loading="lazy"
@@ -335,15 +378,15 @@
         Meet the Books
       </h2>
 
-      <div class="text-center grid grid-cols-1 md:grid-cols-3">
-        <section class="mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <section class="prose mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
           <p class="font-headline font-semibold text-brand-teal text-xl">
-            Premium soft cover books
+            Softcover books
           </p>
-          <p class="prose mb-4 mr-8">
-            Each book is measured at 20x20cm, roughly the width of an A4 paper.
-            Price starts from $39.95. This base price include a generous 40
-            pages, then $0.50 per extra page.
+          <p class="mb-4 mr-8">
+            Each book is measured at 20x20cm and the price starts from $39.95.
+            This base price include a 41 pages, then $0.50 per extra
+            page. You can have up to 200 pages per book.
           </p>
           <img
             loading="lazy"
@@ -354,11 +397,11 @@
           />
         </section>
 
-        <section class="mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
+        <section class="prose mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
           <p class="font-headline font-semibold text-brand-teal text-xl">
             True to life colours
           </p>
-          <p class="prose mb-4 mr-8">
+          <p class="mb-4 mr-8">
             All our books are made using premium quality 100% recycled paper.
             The book cover uses heavy-weight satin paper and the interior pages
             have a magazine-quality finish.
@@ -372,11 +415,11 @@
           />
         </section>
 
-        <section class="mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
+        <section class="prose mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
           <p class="font-headline font-semibold text-brand-teal text-xl">
             Durable Binding
           </p>
-          <p class="prose mb-4 mr-8">
+          <p class="mb-4 mr-8">
             The pages are bound together using strong yet flexible glue, then
             trimmed with a sharp, crispy and neatly finish. Please note that the
             binding does not allow the book to lay flat.
@@ -408,9 +451,9 @@
             How about my live photos and videos?
           </p>
           <p class="prose font-normal text-black">
-            You can still print them as still photos. iOS' Photos will
-            automatically pick a frame to represent the video, which we use as
-            the photo.
+            Keepers will allow you to use Live Photos as still photos. iOS' Photos will
+            automatically pick a frame to represent it, which we use as
+            the photo. Unfortunately, we do not support videos at this time.
           </p>
         </section>
 
@@ -421,9 +464,10 @@
             Do you offer hard cover books or lay flat books?
           </p>
           <p class="prose font-normal text-black">
-            Not yet. We are expecting to offer hard cover books in the next few
-            months. Lay flat books and cloth-covered books will take a bit
-            longer.
+            Not yet. To ensure the best overall experience, we are focusing on
+            the soft cover books right now. We are talking to some of the
+            world's best hard cover manufacturers at the moment but we don't
+            have a firm date to share just yet. 
           </p>
         </section>
 
@@ -431,13 +475,13 @@
           <p
             class="prose font-headline font-semibold text-brand-teal text-xl mb-4"
           >
-            I have downloaded Keepers and have a technical question. How do I
-            get in contact with you?
+            How do I get in contact with you?
           </p>
           <p class="prose font-normal text-black">
             Please reach us at
-            <a href="mailto:hello@keepers.photos">hello@keepers.photos</a>. We'll
-            get back to you within 24 hours.
+            <a href="mailto:hello@keepers.photos">hello@keepers.photos</a>. We
+            are a small company and nothing delights us more than hearing from our customers. 
+            We'll get back to you within 24 hours. Rain or shine.
           </p>
         </section>
       </div>
@@ -571,51 +615,31 @@
       </div>
     </div>
 
-    <div
-      id="call-to-action-second"
-      class="mx-auto w-full pt-20 px-4 sm:px-6 lg:px-8 pb-4 text-center bg-cover bg-top bg-no-repeat"
-      style="
-        background-image: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url(/assets/exciting-mum-and-daughter-taking-a-selfie-b9c6c804.webp);
-      "
-    >
-      <p class="mt-[30vh] mx-auto text-center font-headline text-bold text-white text-2xl max-w-lg">
-        Download Keepers &nbsp;today!
-      </p>
-      <div class="mb-20 flex justify-center gap-x-6">
-        <div
-          class="mx-auto mt-8 text-center flex justify-center justify-items-center justify-self-center"
-        >
-          <a href="javascript:void(0)" onclick="trackAppstoreClick()"
-            ><img
-              class="h-[60px] mx-2 mr-2"
-              src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg"
-          /></a>
+    <div id="call-to-action-second" class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/exciting-mum-and-daughter-taking-a-selfie-b9c6c804.webp);">
+      <div class="flex-grow"></div>
 
-          <!--
-          <a href="javascript:void(0)" onclick="openGooglePlayPopup()"
-            ><img
-              class="h-[40px] mx-2 ml-2"
-              src="img/Google_Play_Store_badge_EN.svg"
-          /></a>
-          -->
-        </div>
-      </div>
-      <div class="my-36 flex justify-center gap-x-6 text-slate-100 text-sm text-slate">
-        <p>
-          For feedback, issues &amp; requests, please email us at
-          <a href="mailto:contact@keepers.photos">hello@keepers.photos</a>.
-          Our physical address is 26 Bath Street, Dunedin, Otago, New Zealand.
-          Our contact number is (64)21-0822-3483. 
-          Our <a href="/privacy.html">Privacy Policy</a>. TLDR: your photos stay 
-          on your device. We won't send your private data to the cloud.
+      <div class="bottom-content text-center px-8 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+        <p class="mx-auto text-center font-headline font-bold text-white text-2xl max-w-lg mb-8">
+        Download Keepers today!
         </p>
+
+        <div class="flex justify-center mb-12">
+          <a href="javascript:void(0)" onclick="trackAppstoreClick()">
+            <img class="h-[60px] mx-2" src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg" />
+          </a>
+        </div>
+
+        <p class="text-slate-100 text-sm max-w-prose sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto">
+        For feedback, issues &amp; requests, please email us at
+        <a href="mailto:contact@keepers.photos" class="underline">hello@keepers.photos</a>.
+        Our physical address is 26 Bath Street, Dunedin, Otago, New Zealand.
+        Our contact number is (64)21-0822-3483. 
+        You may also want to check out our <a href="/privacy.html"
+          class="underline">Privacy Policy</a>. TLDR: your photos stay on your
+        device. We won't send your private data to&nbsp;the&nbsp;cloud. </p>
       </div>
     </div>
+
     <!-- Facebook Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
