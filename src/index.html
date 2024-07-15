@@ -62,8 +62,8 @@
 }
 
   .device-iphone-15-pro {
-    width: 282px;
-    height: 576px;
+    width: 320px;
+    height: 653px;
   }
 
   .device-frame {
@@ -80,10 +80,10 @@
 
   .device-screen {
     position: absolute;
-    top: 11px;
+    top: 14px;
     left: 13px;
-    width: 256px;
-    height: 555px;
+    width: 294px;
+    height: 623px;
     overflow: hidden;
     border-radius: 38px;
   }
@@ -94,6 +94,7 @@
     object-fit: cover;
   }
 
+  /*
   @media only screen and (max-width: 1068px) {
     .device-iphone-15-pro {
       width: 212px;
@@ -121,6 +122,7 @@
       height: 277px;
     }
   }
+  */
 </style>
     <script
       defer
@@ -153,7 +155,7 @@
         </span>
 
         <div class="flex justify-center gap-x-6 mt-4">
-          <a href="javascript:void(0)" onclick="trackAppstoreClick()">
+          <a href="https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575">
             <img
                 class="h-[60px] mx-2"
                 src="img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
@@ -237,7 +239,7 @@
       </div>
 
       <div class="flex justify-center gap-x-6 mt-12">
-        <a href="javascript:void(0)" onclick="trackAppstoreClick()" >
+          <a href="https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575">
           <img
               loading="lazy"
               class="mx-auto h-[60px] object-center"
@@ -503,7 +505,7 @@
         </p>
 
         <div class="flex justify-center mb-12">
-          <a href="javascript:void(0)" onclick="trackAppstoreClick()">
+          <a href="https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575">
             <img class="h-[60px] mx-2" src="img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" />
           </a>
         </div>
@@ -546,15 +548,6 @@
       );
       fbq("init", "875415683448386");
       fbq("track", "PageView");
-
-      var button = document.getElementById("signUpButton");
-      button.addEventListener(
-        "click",
-        function () {
-          fbq("track", "lead");
-        },
-        false
-      );
     </script>
     <noscript>
       <img
@@ -563,69 +556,6 @@
         src="https://www.facebook.com/tr?id=875415683448386&ev=PageView&noscript=1" /></noscript
     ><!-- End Facebook Pixel Code -->
   </body>
-  <script type="text/javascript">
-    function openGooglePlayPopup() {
-      document.getElementById("googlePlayPopup").className = "";
-    }
-    function closeGooglePlayPopup() {
-      document.getElementById("googlePlayPopup").className = "hidden";
-    }
-
-    const wishlistData = () => {
-      return {
-        email: "",
-        successMsg: "",
-        errorMsg: "",
-        loading: false,
-        submitted: false,
-        init: function () {
-          this.email = "";
-          this.errorMsg = "";
-          this.successMsg = "";
-          this.loading = false;
-          this.submitted = false;
-        },
-        addWishlist: function () {
-          this.successMsg = "";
-          this.errorMsg = "";
-          this.loading = true;
-          if (this.email) {
-            return fetch("https://api.keepers.photos/functions/v1/wishlist", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ email: this.email }),
-            })
-              .then((resp) => {
-                return resp.json();
-              })
-              .then((data) => {
-                this.loading = false;
-                if (data.success) {
-                  this.successMsg =
-                    "Thanks for your submitting!<br /> We'll contact you as soon as possible.";
-                  this.submitted = true;
-                  setTimeout(() => {
-                    this.init();
-                    closeGooglePlayPopup();
-                  }, 3000);
-                } else {
-                  this.errorMsg = data.reason;
-                }
-              });
-          } else {
-            this.errorMsg = "Invalid Email Address";
-            this.loading = false;
-          }
-        },
-      };
-    };
-
-    function trackAppstoreClick(e) {
-      gtag('event', 'conversion', {'send_to': 'AW-11025263890/Yq1FCJy1mL4ZEJLaoIkp'});
-      location.href =
-        "https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575";
-    }
-  </script>
 
   <!-- Google tag (gtag.js) -->
   <script
