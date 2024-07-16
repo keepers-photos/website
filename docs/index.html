@@ -129,7 +129,7 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <link rel="stylesheet" href="/assets/tailwind-95835381.css">
+    <link rel="stylesheet" href="/assets/tailwind-e1e3e53f.css">
   </head>
   <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
     <div id="first-fold" class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/photo-of-mum-daughter-in-bedroom-tent-cbe198e0.webp);">
@@ -578,11 +578,13 @@
     // Helper function to delay opening a URL until a gtag event is sent.
     // Call it in response to an action that should navigate to a URL.
     // https://ads.google.com/aw/conversions/detail/settings?ocid=1107783968&ctId=6851505824&showWebpagesTab=false&showDiagnosticsTab=false&showStoreDiagnosticsTab=false&conversionPlaceInfo=%7B%7D&euid=706181433&__u=9231101617&uscid=1107783968&__c=3634828832&authuser=0&subid=nz-en-awhp-g-aw-c-home-signin%21o2-adshp-hv-q4-22
+    // https://business.facebook.com/events_manager2/list/dataset/875415683448386/overview?business_id=653651962453304&date=2024-06-18_2024-07-15
     function gtagSendEvent(url) {
       gtag('event', 'conversion_event_signup', {});
+      fbq('track', 'conversion_event_signup');
+
       /// Pause 2000ms before redirecting to the URL. 
       setTimeout(function () {
-        debugger
         if (typeof url === 'string') {
           window.location = url;
         }
