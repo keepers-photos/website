@@ -1,0 +1,1 @@
+const s="keepers-photos-cache-v1",c=["/"];self.addEventListener("install",e=>{e.waitUntil(caches.open(s).then(t=>t.addAll(c)))});self.addEventListener("fetch",e=>{e.respondWith(caches.match(e.request).then(t=>t||fetch(e.request)))});

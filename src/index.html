@@ -6,25 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keepers - Curate memories. Tell stories.</title>
     <meta name="apple-itunes-app" content="app-id=1579027575" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Keepers Photobook Designer">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="img/apple-icon-icon.png">
     <link href="css/tailwind.css" rel="stylesheet" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/site.webmanifest" />
     <style>
       @font-face {
         font-family: "ff-nuvo-web-pro";
@@ -571,13 +558,13 @@
     gtag("config", "G-JJL0ZF4F88");
   </script>
 
-  <!-- Google tag (gtag.js) event - delayed navigation helper -->
+  <!-- Track link click -->
   <script>
     // Helper function to delay opening a URL until a gtag event is sent.
     // Call it in response to an action that should navigate to a URL.
     // https://ads.google.com/aw/conversions/detail/settings?ocid=1107783968&ctId=6851505824&showWebpagesTab=false&showDiagnosticsTab=false&showStoreDiagnosticsTab=false&conversionPlaceInfo=%7B%7D&euid=706181433&__u=9231101617&uscid=1107783968&__c=3634828832&authuser=0&subid=nz-en-awhp-g-aw-c-home-signin%21o2-adshp-hv-q4-22
     // https://business.facebook.com/events_manager2/list/dataset/875415683448386/overview?business_id=653651962453304&date=2024-06-18_2024-07-15
-    function gtagSendEvent(url) {
+    function trackLinkClick(url) {
       gtag('event', 'conversion_event_signup', {});
       fbq('track', 'conversion_event_signup');
 
@@ -591,14 +578,25 @@
     }
 
     function trackAppstoreClick() {
-      gtagSendEvent("https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575");
+      trackLinkClick("https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575");
     }
   </script>
 
+  <!-- Posthog -->
   <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
     posthog.init('phc_MMB1OVEjtuJEuGOQ5GnQsv6RtBaBydMxk25n8qhVjVI',{api_host:'https://us.i.posthog.com', 
         })
 </script>
+  <!-- Klaviyo -->
   <script type="text/javascript" src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=WhPjAG" ></script>
+
+  <!-- Service Worker as requested to show install prompt for iOS devices -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
 </html>
