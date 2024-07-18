@@ -6,9 +6,7 @@ module.exports = {
       input: {
         index: resolve(__dirname, "src/index.html"),
         privacy: resolve(__dirname, "src/privacy.html"),
-        news: resolve(__dirname, "src/whatsnew.html"),
-        manifest: resolve(__dirname, "src/manifest.json"),
-        "service-worker": resolve(__dirname, "src/service-worker.js"),
+        news: resolve(__dirname, "src/whatsnew.html")
       },
     },
     outDir: "../docs",

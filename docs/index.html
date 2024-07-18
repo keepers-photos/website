@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!-- Handcrafted by Alex, Meg and Aiden with substantial contribution from Roanne and Joe. -->
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keepers - Curate memories. Tell stories.</title>
+    <title>Keepers Photobook Designer | Curate memories. Tell stories. | AI-assisted Storytelling</title>
     <meta name="apple-itunes-app" content="app-id=1579027575" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Keepers Photobook Designer">
-    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIktlZXBlcnMgUGhvdG9ib29rIERlc2lnbmVyIiwKICAic2hvcnRfbmFtZSI6ICJLZWVwZXJzIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmMGVlZWYiLAogICJ0aGVtZV9jb2xvciI6ICIjMDAwMDAwIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiaW1nL2Zhdmljb24tMTZ4MTYucG5nIiwKICAgICAgInNpemVzIjogIjE2eDE2IiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJpbWcvZmF2aWNvbi0zMngzMi5wbmciLAogICAgICAic2l6ZXMiOiAiMzJ4MzIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9LAogICAgewogICAgICAic3JjIjogImltZy9mYXZpY29uLnBuZyIsCiAgICAgICJzaXplcyI6ICI0OHg0OCIsCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIKICAgIH0sCiAgICB7CiAgICAgICJzcmMiOiAiaW1nL2FwcGxlLXRvdWNoLWljb24ucG5nIiwKICAgICAgInNpemVzIjogIjE4MHgxODAiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9LAogICAgewogICAgICAic3JjIjogImltZy9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJpbWcvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIKICAgIH0KICBdCn0K" />
+    <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="img/apple-icon-icon.png">
     
     <style>
@@ -59,7 +59,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/iphone15pro_frame-a3a905d8.png');
+    background-image: url('/assets/iphone15pro_frame-8c0e49d4.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -132,6 +132,7 @@
       <div class="bottom-content text-center px-8 mb-12 md:mb-18 lg:mb-24">
         <img
             loading="lazy"
+            alt="Keepers Photobook Designer Logo"
             src="data:image/webp;base64,UklGRnAIAABXRUJQVlA4WAoAAAAQAAAAYwAAYwAAQUxQSKsDAAABoAQAjAFJSmt7u9e2bdu2bdu2bdu2bdvm2La7O3vo7kqqjq+ImAD4/6HJzDSlSStNvr47bt9n+ujugfHlDTIUXOViQ9bB+6vwa/sJ+ftPMzEbGIwyWlaaWLUORjktc7WM8n1AWcOa8NGsQnnvp2dTLVAi6yguppMo87eCTDrHSYVrNCwyP0G5g6qzmIKynzYzKOYqXXxXOu1GlP9pFrJ6oQrAaVQpL6IK3YoT9UpQAm7WkuR4jWoMa0AyG1V5OSVBaU9lJPYRZ9iD6nybU1jTSIXgXFGpryNLW6KFh1cZQYOTOPjt7dOs4/JPHHCXQUiej0gfta+CFgAg93wfBlHNhSxFcuvtFgawW25vFBneTCOgsj/ZlxHpwFFD89tWKstQ54yHkThwWT5wNt3wz0T4Oa9TbWJoYo9X04DAvEv9aXCJMxkeIumjDslBcKVDsSR+FZ0YY6VwmZgJxBvbP7AS4BGjQ4W+o/jYLUWANsN4H4KYdo5o16L4mHE6IG/gIg7vZ3CgZjDBOh0w7BwjzjbOnvkMivcuDhxNl8Th94J2usUTnDOwgAkEuFb7J1meIeEq4NnVRhBS60+mI+V0Jl2sBHjaDADF3RXQlSS+AwAsQ8XhtZSQ44PyompBu1jl4WyYh+o7rtv/F3A/1eG/gJfpd/wF3DCPtqpvB9QKVd9QSHNbef4lAXonqW6XDiDdPcX5VwIAaBtDMYdJF5Kl8EfjEYptTHraCD7m+ROo5Edwx8xjKYq3DAG7iwki6rPI+obgRlp7eT+Jw2uZGGiXovjIpuDgIIs4PJyXLO2sGILdBkfS3CDAjwNSkegbXbOieO+y4HCzCAJMutpYL67UjgiknA2O63dSIEbsLC0o6zRPJH2T3Qko7UWC6Dk9mwBT9xdIm9gXnJ5JhPiyVwontLVOxyPxhRTOZXtFhQnnamsdKbQ+BKnD6oPA3olUiCEbitrJMPY70m/WiUh5kQ7RZWo+HWgydH1oQ3rXoiC0bigDRJdTa/a9TkCOk0GsbhMLvs+yCIJiLgqJ6wLCJ9rUcdIkLvNTZQTVBMKOsapYqaFIfkIR3woAafUgJVhHAa1mtRLupiOC/F8VENMGyEdZ5TtspEt/VzrfisCwVbRsi4BjsoOSfczDAsr7SJU0EJgukOp6ai6530sU0RTY9kuUZ4eej/moNF+KAuOCTyUJaAmsSzySwrMTMM+9PYqd5UplYG9ofNA9kZEl8PqANCCjrkDrMQu4Tu1Yygz/NwQAVlA4IJ4EAAAQHgCdASpkAGQAPoU0lUelP6IhNtX+Q/AQiWgDGAP0AQ/M1/27qlut+N87Oyv5jiKkOWJvWrtxPMf5ynpQ3m7ei79GS6Oq7bp3yjGeLeR5db0+rYShIPpyUCxianYawHuky45uY2lrwFVvuZ8zp7gSnacmM4lhfFWVXjXVJvAVW2kgXb17xjy6cVy8HHPrDwvUiH92P7uupOYRChtKHKf13wJnskND02OuR8g5CfsaugRM4d6lHlRLVAYaxKk46FPyQ9Uzm++IWV/asnkeWCWnY9+w+f3TrqJuTHPlSRxtlqwYgXWBM1TqMNbr0OU808/9NnNglp/JUAAA/vz4af6/f+ogInz33sLZmkt/rrViLtUbcTFxFo6oncOjFE3S6G61Zey/V+FNIJI5qB0Bjccgh/x6yKEsvCFGuSS853OepE6PNJZfF9MoG+KJYgYrpkTGsVz+JuAOzcwsTgs/zX+q/LObyVwg2sOmBxedA2N3sdKyQcbDw0uRGPOzEvylBiWAgAyT/nF84q//bkP//bZVRm8liI7Te5UfWuZdnejWR/0Lbbp8fVAzaHf5Qwt79k5SqyJ3j4IJ8Zf8ICzdKH1vsy0lLpHc3UbyDlhS9UxDrEPw6AWBNVNvGGawm9rgmj5n+SA7RTWH953h5r8QQnSpj3ALLIJxVFas3t/dMurk0cB1Up/PbNTrLY4HlwAaWwgkDG+R+gIVJ5h6VoCj3eOK7nX4TbuIL8yyPt9PSd4ZjK0P4wlodvwBC1KfoPEkOpBkmSLnCvfjjZjiH3FbeQHuur09FQ5jy9cUUp0d/X7oVQxUDbgi2hw2egH66grsKn9dPipEMTI+N0Y92zaob7/yTTLqo6dWefhIbzhzJJ13CmEzfNK/vWg0Fd9/PCD+3105LE08+japaY425BFXD9ccoLXToPFFsCnMAmq5kAwggRzIBhBIV033bdQC4wX1NRsXjq4im1ELJojqvxH1zZe/u+QJR528Q9++U6hzir+z41Jn/5T5//ygxTeWYK3KmdANDVXi011ok6//5gQEASn66vSwRfCYzRRWMQvXtjc42oh9XbFbQ0zqxnbA2+P44xuWdK9Yq77EpoINl8yOjNPD8WlOrQ+VFdFP09T/b1jYBE4zCKTAO7AegUrIMm/yqxLynKneHlvDLA3blNhEK9+jQIMJFAbgS3svp8Y6iImsnmSgROJb9B6yw3Z5HPnxLannJJNV8R6XP99rc7o+uKcUrnUSfcHpWxzj+JqSTtVJy6iwOlxZasu/vXK/U9NPw1tHMjc7WehbHNiBM33WeDdqfYtJS0e1C0H49ry/LilO4xz2f/X6uCsc7z4aSAR64XT5dUiW0F6LLXkF5YE5KO0Ggsd/xabJaTDpzHsaNYdIUqQao6Kd2oiSDGB8+jkjCKBDIYNX6X3TMrZB/9MdRIKbFaKSyUCKPD6F8raSapsDx6gfwVm5MMRs2QDogxdY0Xp+8IX66PdxMB2ip9gK4Z81vJeXmLymFG7cT7yPo1uapZuMU2vt8FmA1jlsYEUBvhZjf+tQ1lNvarkkokqLC8qYDsKVshYAAAAAAAAAAAA="
             width="67"
             height="67"
@@ -144,9 +145,12 @@
         </span>
 
         <div class="flex justify-center gap-x-6 mt-4">
-          <a href="javascript:void(0)" onclick="trackAppstoreClick()">
+          <a 
+            aria-label="Download Keepers Photobook Designer on the App Store"
+            href="javascript:void(0)" onclick="trackAppstoreClick()">
             <img
                 class="h-[60px] mx-2"
+                alt="Download Keepers Photobook Designer on the App Store"
                 src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg"
                 />
           </a>
@@ -182,8 +186,8 @@
             <div class="device-screen">
               <img loading="lazy" 
                 class="rounded-xl mb-3 w-full object-cover object-center"
-                src="/assets/screenshot-ai_curated_library-e45355dd.webp"
-                alt="AI Curated Library Screenshot">
+                src="/assets/screenshot-ai_curated_library-1529b1d2.webp"
+                alt="Keepers AI Curated Library screenshot">
             </div>
             <div class="device-frame"></div>
           </div>
@@ -203,7 +207,7 @@
               <img loading="lazy" 
                 class="rounded-xl mb-3 w-full object-cover object-center"
                 src="/assets/screenshot-page_designer-f18748c7.webp"
-                alt="AI Curated Library Screenshot">
+                alt="Keepers Book Page Designer screenshot">
             </div>
             <div class="device-frame"></div>
           </div>
@@ -220,7 +224,7 @@
               <img loading="lazy" 
                 class="rounded-xl mb-3 w-full object-cover object-center"
                 src="/assets/screenshot-book_pages-377836fc.webp"
-                alt="AI Curated Library Screenshot">
+                alt="Keepers app's Book Pages editing screenshot">
             </div>
             <div class="device-frame"></div>
           </div>
@@ -228,10 +232,13 @@
       </div>
 
       <div class="flex justify-center gap-x-6 mt-12">
-        <a href="javascript:void(0)" onclick="trackAppstoreClick()">
+        <a 
+          aria-label="Download Keepers Photobook Designer on the App Store"
+          href="javascript:void(0)" onclick="trackAppstoreClick()">
           <img
               loading="lazy"
               class="mx-auto h-[60px] object-center"
+              alt="Download Keepers Photobook Designer on the App Store"
               src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg"
               />
         </a>
@@ -262,6 +269,7 @@
             loading="lazy"
             class="rounded-xl mt-2 mb-3 w-full object-cover object-center"
             src="/assets/book-content-b5015c33.webp"
+            alt="Photo of a Keepers Photobook showing full spread."
             width="250"
             height="250"
           />
@@ -280,6 +288,7 @@
             loading="lazy"
             class="rounded-xl mt-2 mb-3 w-full object-cover object-center"
             src="/assets/book-cover-aac9234f.webp"
+            alt="Photo of a Keepers Photobook cover and a stack of books."
             width="250"
             height="250"
           />
@@ -298,6 +307,7 @@
             loading="lazy"
             class="rounded-xl mt-2 mb-3 w-full object-cover object-center"
             src="/assets/book-binding-d1823495.webp"
+            alt="Zoom-in photo of a Keepers Photobook perfect binding of a wedding book"
             width="250"
             height="250"
           />
@@ -349,7 +359,9 @@
           </p>
           <p class="prose font-normal text-black">
             Please reach us at
-            <a href="mailto:hello@keepers.photos">hello@keepers.photos</a>. We
+            <a 
+              aria-label="Email address for Keepers Photobook Designer's support team"
+              href="mailto:hello@keepers.photos">hello@keepers.photos</a>. We
             are a small company and nothing delights us more than hearing from our customers. 
             We'll get back to you within 24 hours. Rain or shine.
           </p>
@@ -379,6 +391,7 @@
             loading="lazy"
             class="float-left w-28 lg:w-36 pr-5"
             src="/assets/promise-team-3f6647d2.webp"
+            alt="Photo of the Keepers team"
             width="100"
             height="100"
           />
@@ -394,6 +407,7 @@
             loading="lazy"
             class="float-left w-28 lg:w-36 mt-3 pr-5"
             src="/assets/promise-b-corp-5ca37ece.webp"
+            alt="Photo of the B Corp logo"
             width="100"
             height="100"
           />
@@ -409,6 +423,7 @@
             loading="lazy"
             class="float-left w-28 lg:w-36 pr-5"
             src="/assets/promise-1-percent-d8b7d362.webp"
+            alt="Photo of the 1% for the planet logo"
             width="100"
             height="100"
           />
@@ -437,6 +452,7 @@
             loading="lazy"
             class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
             src="/assets/testimonial-laura-40d73980.webp"
+            alt="Photo of Laura, TV producer"
             width="250"
             height="141"
           />
@@ -453,6 +469,7 @@
           <img
             loading="lazy"
             class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
+            alt="Photo of Tash, Dentist"
             src="/assets/testimonial-tash-484aa05e.webp"
             width="250"
             height="141"
@@ -470,6 +487,7 @@
           <img
             loading="lazy"
             class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
+            alt="Photo of Jay, SAHM"
             src="/assets/testimonial-jay-575a09b9.webp"
             width="250"
             height="141"
@@ -485,7 +503,7 @@
       </div>
     </div>
 
-    <div id="call-to-action-second" class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/exciting-mum-and-daughter-taking-a-selfie-b9c6c804.webp);">
+    <div id="call-to-action-second" class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/assets/exciting-mum-and-daughter-taking-a-selfie-d8a69be6.webp);">
       <div class="flex-grow"></div>
 
       <div class="bottom-content text-center px-8 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
@@ -494,14 +512,23 @@
         </p>
 
         <div class="flex justify-center mb-12">
-          <a href="javascript:void(0)" onclick="trackAppstoreClick()">
-            <img class="h-[60px] mx-2" src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg" />
+          <a 
+            aria-label="Download Keepers Photobook Designer on the App Store"
+            href="javascript:void(0)" onclick="trackAppstoreClick()">
+            <img 
+              loading="lazy" 
+              class="h-[60px] mx-2" 
+              alt="Download Keepers Photobook Designer on the App Store"
+              src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917-a26fc5b3.svg" 
+            />
           </a>
         </div>
 
         <p class="text-slate-100 text-sm max-w-prose sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto">
         For feedback, issues &amp; requests, please email us at
-        <a href="mailto:contact@keepers.photos" class="underline">hello@keepers.photos</a>.
+        <a 
+          aria-label="Email address for Keepers Photobook Designer's support team"
+          href="mailto:contact@keepers.photos" class="underline">hello@keepers.photos</a>.
         Our physical address is 26 Bath Street, Dunedin, Otago, New Zealand.
         Our contact number is (64)21-0822-3483. 
         You may also want to check out our <a href="/privacy.html"
@@ -540,8 +567,7 @@
     </script>
     <noscript>
       <img
-        height="1"
-        width="1"
+        height="1" width="1" alt="Facebook Pixel"
         src="https://www.facebook.com/tr?id=875415683448386&ev=PageView&noscript=1" /></noscript
     ><!-- End Facebook Pixel Code -->
   </body>

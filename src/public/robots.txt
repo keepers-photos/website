@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+Sitemap: https://keepers.photos/sitemap.xml
+
+# Crawl-delay: 10
+
+User-agent: GPTBot
+Disallow: /
