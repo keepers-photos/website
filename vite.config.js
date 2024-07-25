@@ -4,14 +4,14 @@ module.exports = {
   build: {
     rollupOptions: {
       input: {
-        index: resolve(__dirname, "src/index.html"),
-        privacy: resolve(__dirname, "src/privacy.html"),
-        news: resolve(__dirname, "src/whatsnew.html")
+        index: resolve(__dirname, "assets/index.html"),
+        privacy: resolve(__dirname, "assets/privacy.html"),
+        news: resolve(__dirname, "assets/news.html"),
       },
     },
     outDir: "../docs",
   },
-  root: "src/",
+  root: "assets/",
   server: {
     host: process.env.VITE_HOST || "localhost",
   },

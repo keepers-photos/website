@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- Handcrafted by Alex, Meg and Aiden with substantial contribution from Roanne and Joe. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Keepers {% block title %}{% endblock %} | Curate memories. Tell stories. | AI-assisted
+      Storytelling | Softcover Photobooks
+    </title>
+    <meta
+      name="description"
+      content="Keepers Photobook Designer uses AI to create a good-enough first-draft for your photos that takes you 95% towards a finalised book. " />
+    <meta name="apple-itunes-app" content="app-id=1579027575" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Keepers Photobook Designer" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link href="css/tailwind.css" rel="stylesheet" />
+    {% block header %}{% endblock %}
+    <style>
+      @font-face {
+        font-family: "ff-nuvo-web-pro";
+        src: url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+            format("woff2"),
+          url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+            format("woff"),
+          url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+            format("opentype");
+        font-display: swap;
+        font-style: normal;
+        font-weight: 900;
+        font-stretch: normal;
+      }
+
+      @font-face {
+        font-family: "objektiv-mk3";
+        src: url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("woff2"),
+          url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("woff"),
+          url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("opentype");
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        font-stretch: normal;
+      }
+
+      .device-wrap {
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .device-iphone-15-pro {
+        width: 320px;
+        height: 653px;
+      }
+
+      .device-frame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/img/iphone15pro_frame.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .device-screen {
+        position: absolute;
+        top: 14px;
+        left: 13px;
+        width: 294px;
+        height: 623px;
+        overflow: hidden;
+        border-radius: 38px;
+      }
+
+      .device-screen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
+    {% block content %}{% endblock %}
+
+    <!--
+      --
+      --
+      --
+      --
+      --  📦 Javascripts
+      --
+      --
+      --
+    -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "875415683448386");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        alt="Facebook Pixel"
+        src="https://www.facebook.com/tr?id=875415683448386&ev=PageView&noscript=1" /></noscript
+    ><!-- End Facebook Pixel Code -->
+  </body>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JJL0ZF4F88"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-JJL0ZF4F88");
+  </script>
+
+  <!-- Track link click -->
+  <script>
+    // Helper function to delay opening a URL until a gtag event is sent.
+    // Call it in response to an action that should navigate to a URL.
+    // https://ads.google.com/aw/conversions/detail/settings?ocid=1107783968&ctId=6851505824&showWebpagesTab=false&showDiagnosticsTab=false&showStoreDiagnosticsTab=false&conversionPlaceInfo=%7B%7D&euid=706181433&__u=9231101617&uscid=1107783968&__c=3634828832&authuser=0&subid=nz-en-awhp-g-aw-c-home-signin%21o2-adshp-hv-q4-22
+    // https://business.facebook.com/events_manager2/list/dataset/875415683448386/overview?business_id=653651962453304&date=2024-06-18_2024-07-15
+    function trackLinkClick(url) {
+      gtag("event", "conversion_event_signup", {});
+      fbq("track", "conversion_event_signup");
+
+      /// Pause 2000ms before redirecting to the URL.
+      setTimeout(function () {
+        if (typeof url === "string") {
+          window.location = url;
+        }
+      }, 2000);
+      return false;
+    }
+
+    function trackAppstoreClick() {
+      trackLinkClick(
+        "https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575"
+      );
+    }
+  </script>
+
+  <!-- Posthog -->
+  <script>
+    !(function (t, e) {
+      var o, n, p, r;
+      e.__SV ||
+        ((window.posthog = e),
+        (e._i = []),
+        (e.init = function (i, s, a) {
+          function g(t, e) {
+            var o = e.split(".");
+            2 == o.length && ((t = t[o[0]]), (e = o[1])),
+              (t[e] = function () {
+                t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+              });
+          }
+          ((p = t.createElement("script")).type = "text/javascript"),
+            (p.async = !0),
+            (p.src =
+              s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+              "/static/array.js"),
+            (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+              p,
+              r
+            );
+          var u = e;
+          for (
+            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+              u.people = u.people || [],
+              u.toString = function (t) {
+                var e = "posthog";
+                return (
+                  "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                );
+              },
+              u.people.toString = function () {
+                return u.toString(1) + ".people (stub)";
+              },
+              o =
+                "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(
+                  " "
+                ),
+              n = 0;
+            n < o.length;
+            n++
+          )
+            g(u, o[n]);
+          e._i.push([i, s, a]);
+        }),
+        (e.__SV = 1));
+    })(document, window.posthog || []);
+    posthog.init("phc_MMB1OVEjtuJEuGOQ5GnQsv6RtBaBydMxk25n8qhVjVI", {
+      api_host: "https://us.i.posthog.com",
+    });
+  </script>
+
+  <!-- Service Worker as requested to show install prompt for iOS devices -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register(
+          "/service-worker.js?version=2024-07-18-1524"
+        );
+      });
+    }
+  </script>
+</html>
