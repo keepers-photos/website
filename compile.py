@@ -22,7 +22,7 @@ def render_html(input_file):
 
     template = env.get_template(src_filename)
     rendered_html = template.render()
-    print(rendered_html)
+    # print(rendered_html)
 
     # Save the rendered HTML to the `assets` directory
     output_file = os.path.join("assets", src_filename)
