@@ -1,108 +1,85 @@
 <!DOCTYPE html>
 <!-- Handcrafted by Alex, Meg and Aiden with substantial contribution from Roanne and Joe. -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Keepers Photobook Designer | Curate memories. Tell stories. | AI-assisted
-      Storytelling | Softcover Photobooks
-    </title>
-    <meta
-      name="description"
-      content="Keepers Photobook Designer uses AI to create a good-enough first-draft for your photos that takes you 95% towards a finalised book. " />
-    <meta name="apple-itunes-app" content="app-id=1579027575" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta
-      name="apple-mobile-web-app-title"
-      content="Keepers Photobook Designer" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link href="css/tailwind.css" rel="stylesheet" />
-    
-    <style>
-      @font-face {
-        font-family: "ff-nuvo-web-pro";
-        src: url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
-            format("woff2"),
-          url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
-            format("woff"),
-          url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
-            format("opentype");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 900;
-        font-stretch: normal;
-      }
 
-      @font-face {
-        font-family: "objektiv-mk3";
-        src: url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-            format("woff2"),
-          url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-            format("woff"),
-          url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-            format("opentype");
-        font-display: swap;
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: normal;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Keepers Photobook Designer | Your New Daily Photo Ritual
+  </title>
+  <meta name="description" content="3-minutes a day. Keepers helps you to get family photos sorted." />
+  <meta name="apple-itunes-app" content="app-id=1579027575" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Keepers: Your New Daily Photo Ritual" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link href="css/tailwind.css" rel="stylesheet" />
+  
+  <style>
+    @font-face {
+      font-family: "ff-nuvo-web-pro";
+      src: url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),
+        url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),
+        url("https://use.typekit.net/af/d5afd1/00000000000000007735997b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 900;
+      font-stretch: normal;
+    }
 
-      .device-wrap {
-        position: relative;
-        margin: 0 auto;
-      }
+    @font-face {
+      font-family: "objektiv-mk3";
+      src: url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
+        url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),
+        url("https://use.typekit.net/af/31b488/00000000000000007735fda4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+    }
 
-      .device-iphone-15-pro {
-        width: 320px;
-        height: 653px;
-      }
+    .device-wrap {
+      position: relative;
+      margin: 0 auto;
+    }
 
-      .device-frame {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("/img/iphone15pro_frame.webp");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+    .device-iphone-15-pro {
+      width: 320px;
+      height: 653px;
+    }
 
-      .device-screen {
-        position: absolute;
-        top: 14px;
-        left: 13px;
-        width: 294px;
-        height: 623px;
-        overflow: hidden;
-        border-radius: 38px;
-      }
+    .device-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/img/iphone15pro_frame.webp");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
-      .device-screen img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M6JMVZ3B');</script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body class="p-0 leading-7 antialiased" style="background: #f0eeef">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6JMVZ3B"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    .device-screen {
+      position: absolute;
+      top: 14px;
+      left: 13px;
+      width: 294px;
+      height: 623px;
+      overflow: hidden;
+      border-radius: 38px;
+    }
 
-    
+    .device-screen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+  
 <!--
   --
   --
@@ -114,20 +91,17 @@
   --
 -->
 
-<div
-  id="first-fold"
-  class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat"
-  style="
+<div id="first-fold" class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat" style="
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.5)
+        rgba(255, 255, 255, 0.5)
       ),
-      url(img/photo-of-mum-daughter-in-bedroom-tent.webp);
+      url(img/hero.webp);
   ">
   <div class="text-center pt-10 pb-12 px-4 sm:px-6 mx:px-8">
-    <p class="mx-auto mt-4 text-white">
-      <b>Some memories are beyond precious</b><br />
+    <p class="mx-auto mt-4 text-xl tracking-tight">
+      <b>Some memories are beyond&nbsp;precious</b><br />
       Hold on to them forever
     </p>
   </div>
@@ -135,27 +109,16 @@
   <div class="flex-grow"></div>
 
   <div class="bottom-content text-center px-8 mb-12 md:mb-18 lg:mb-24">
-    <img
-      loading="lazy"
-      alt="Keepers Photobook Designer Logo"
-      src="img/logo.webp"
-      width="67"
-      height="67"
+    <img loading="lazy" alt="Keepers App Logo" src="img/logo.webp" width="67" height="67"
       class="w-[8vh] md:w-[5vh] lg:w-[8vh] mx-auto" />
-    <div class="font-headline text-4xl text-white lowercase">Keepers</div>
+    <div class="font-headline text-2xl mt">Keepers: Your New Daily Photo Ritual</div>
     <br />
-    <div class="tracking-wide text-white mb-2">
-      Design simple, fast and beautiful photobooks from your phone.
-    </div>
 
-    <div class="flex justify-center gap-x-6 mt-4">
-      <a
-        aria-label="Download Keepers Photobook Designer on the App Store"
-        href="https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575"
+    <div class="flex justify-center gap-x-6">
+      <a aria-label="Download Keepers Photobook Designer on the App Store"
+        href="https://apps.apple.com/app/apple-store/id1579027575?pt=106308819&ct=Website-Landing-Page&mt=8"
         onclick="trackAppstoreClick()">
-        <img
-          class="h-[50px] mx-2"
-          alt="Download Keepers Photobook Designer on the App Store"
+        <img class="h-[50px] mx-2" alt="Download Keepers Photobook Designer on the App Store"
           src="img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" />
       </a>
     </div>
@@ -173,15 +136,32 @@
   --
 -->
 
-<div id="mission-statement" class="py-24 px-6">
-  <div class="prose mx-auto text-left">
-    <h2 class="text-brand mx-auto font-headline font-black text-center text-xl">
-      Keepers reinvented how photo books are designed and made.
-    </h2>
+<div id="mission-statement" class="py-24 px-6 bg-slate-50">
+  <div class="text-xl prose mx-auto">
+    <div class="font-headline text-2xl text-brand text-center mb-12">What can Keepers do for you?</div>
 
-    <p class="prose">Keepers was born from the hearts and minds of a small group of parents in Dunedin, New Zealand. </p>
-    <p class="prose">We created this app for ourselves, our families, and people just like us - those who wish to hold onto the fleeting joys of family life and preserve our most precious memories.  </p>
-    <p class="prose">We've spared no effort in making it the best it can be. We hope that Keepers becomes your trusted companion in capturing and celebrating life's beautiful moments, just as it has for us.</p>
+    <div class="my-6">
+      Newborn parents take more than 20,000 photos in the first year.
+      In a world that moves ever faster, how do you keep up?
+    </div>
+
+    <div class="my-6">
+      3-minutes every day is all you need to build a legacy of memories.
+      Keepers is a free app that helps you tell your family's stories,
+      so your children will grow up with a robust sense of self,
+      to understand who they are and where they come from.
+    </div>
+
+    <div class="my-6">
+      Keepers is designed by parents for parents. We understand how important
+      privacy is to you. All your photos remain on your device.
+    </div>
+
+    <div class="my-6">
+      Let Keepers takes care of the repetitive and tedious tasks,
+      so you can spend your precious time on what technology can never replicate
+      – the intimate stories of your family, told in your own voice.
+    </div>
   </div>
 </div>
 
@@ -196,128 +176,85 @@
   --
 -->
 
-<div id="problem-statement" class="py-24 px-6 bg-slate-50">
-  <h2
-    class="text-brand mx-auto font-headline font-black text-center text-xl mb-6 max-w-lg">
-    We asked people why making a photobook is so hard.
-    <!--<span class="text-brand">And how Keepers can&nbsp;help.</span> -->
-    And how Keepers can&nbsp;help.
-  </h2>
+<div id="problem-statement" class="py-24 px-6">
+  <div class="text-xl prose mx-auto">
+    <div class="font-headline text-2xl text-brand mb-6 text-center">How Keepers Works.</div>
+  </div>
 
   <div class="grid grid-cols-1 md:grid-cols-3">
     <section class="py-4 md:px-2 lg:px-10">
-      <div class="prose mb-4">
-        <span class="">
-          Keepers automatically de-duplicates your camera roll so you can
-          <b class="text-brand">find photos faster</b>.
-        </span>
+      <div class="prose text-xl mb-4">
+        Everyday, Keepers creates your Daily by selecting the best photos from what you took.
       </div>
       <div class="device-wrap device-iphone-15-pro mt-4">
         <div class="device-screen">
-          <img
-            loading="lazy"
-            class="rounded-xl mb-3 w-full object-cover object-center"
-            src="img/screenshot-ai_curated_library.webp"
-            alt="Keepers AI Curated Library screenshot" />
+          <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center" src="img/screenshot-daily.webp"
+            alt="Keepers Daily screenshot" />
         </div>
         <div class="device-frame"></div>
       </div>
     </section>
 
     <section class="py-4 md:px-2 lg:px-10">
-      <div class="prose mb-4">
-        <span>
-        Keepers' data and location filters helps you select 
-        all the best photos 
-        <b class="text-brand">from a trip with a single click</b>.
-        </span>
+      <div class="prose text-xl mb-4">
+        Smart face-detection ensures everyone looks their absolute best in every photo.
       </div>
       <div class="device-wrap device-iphone-15-pro mt-4">
         <div class="device-screen">
-          <img
-            loading="lazy"
-            class="rounded-xl mb-3 w-full object-cover object-center"
-            src="img/screenshot-location_filter.webp"
-            alt="Keepers AI Curated Library screenshot" />
-        </div>
-        <div class="device-frame"></div>
-      </div>
-    </section>
-
-
-    <section class="py-4 md:px-2 lg:px-10">
-      <div class="prose mb-4">
-        <span>
-          Keepers let you 
-          <b class="text-brand">find photos of a family member</b>
-          if you have already tagged them in iPhone's Photos app.
-        </span>
-      </div>
-      <div class="device-wrap device-iphone-15-pro mt-4">
-        <div class="device-screen">
-          <img
-            loading="lazy"
-            class="rounded-xl mb-3 w-full object-cover object-center"
-            src="img/screenshot-faces_pets.webp"
-            alt="Keepers app's Book Pages editing screenshot" />
+          <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center"
+            src="img/screenshot-face_aware_crop.webp" alt="Keepers Page Templates" />
         </div>
         <div class="device-frame"></div>
       </div>
     </section>
 
     <section class="py-4 md:px-2 lg:px-10">
-      <div class="prose mb-4">
-        <span class="">
-          Keepers curates
-          <b class="text-brand">beautifully designed cover templates</b>
-          and offers rich customisation options.
-        </span>
+      <div class="prose text-xl mb-4">
+        You're the curator of your own story - making changes is as easy as drag-and-drop.
       </div>
       <div class="device-wrap device-iphone-15-pro mt-4">
         <div class="device-screen">
-          <img
-            loading="lazy"
-            class="rounded-xl mb-3 w-full object-cover object-center"
-            src="img/screenshot-cover_designer.webp"
-            alt="Keepers Book Page Designer screenshot" />
+          <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center"
+            src="img/screenshot-page_designer.webp" alt="Keepers Book Page Designer screenshot" />
         </div>
         <div class="device-frame"></div>
       </div>
     </section>
 
     <section class="py-4 md:px-2 lg:px-10">
-      <div class="prose mb-4">
-        <span>
-          Keepers' AI designs book pages for you
-          by <b class="text-brand">matching your photos with the most suitable templates</b>.
-        </span>
+      <div class="prose text-xl mb-4">
+        Browse and preview beautiful templates to find your perfect page layout instantly.
       </div>
       <div class="device-wrap device-iphone-15-pro">
         <div class="device-screen">
-          <img
-            loading="lazy"
-            class="rounded-xl mb-3 w-full object-cover object-center"
-            src="img/screenshot-book_pages.webp"
-            alt="Keepers Book Page Designer screenshot" />
+          <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center"
+            src="img/screenshot-templates.webp" alt="Keepers app's Book Pages editing screenshot" />
         </div>
         <div class="device-frame"></div>
       </div>
     </section>
 
     <section class="py-4 md:px-2 lg:px-10">
-      <div class="prose mb-4">
-        <span>
-          Last but not least, Keepers' intuitive user interface help you
-          <b class="text-brand">make design choices faster.</b>
-        </span>
+      <div class="prose text-xl mb-4">
+        3 minutes each day is all it takes - your beautiful book builds itself over time.
       </div>
       <div class="device-wrap device-iphone-15-pro mt-4">
         <div class="device-screen">
-          <img
-            loading="lazy"
-            class="rounded-xl mb-3 w-full object-cover object-center"
-            src="img/screenshot-page_designer.webp"
-            alt="Keepers app's Book Pages editing screenshot" />
+          <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center" src="img/screenshot-books.webp"
+            alt="Keepers Photo books" />
+        </div>
+        <div class="device-frame"></div>
+      </div>
+    </section>
+
+    <section class="py-4 md:px-2 lg:px-10">
+      <div class="prose text-xl mb-4">
+        Give each book its own personality with a custom cover that celebrates your family's story.
+      </div>
+      <div class="device-wrap device-iphone-15-pro mt-4">
+        <div class="device-screen">
+          <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center"
+            src="img/screenshot-cover_designer.webp" alt="Keepers Book Page Designer screenshot" />
         </div>
         <div class="device-frame"></div>
       </div>
@@ -325,16 +262,42 @@
   </div>
 
   <div class="flex justify-center gap-x-6 mt-12">
-    <a
-      aria-label="Download Keepers Photobook Designer on the App Store"
-      href="https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575"
+    <a aria-label="Download Keepers Photobook Designer on the App Store"
+      href="https://apps.apple.com/app/apple-store/id1579027575?pt=106308819&ct=Website-Landing-Page&mt=8"
       onclick="trackAppstoreClick()">
-      <img
-        loading="lazy"
-        class="mx-auto h-[60px] object-center"
+      <img loading="lazy" class="mx-auto h-[60px] object-center"
         alt="Download Keepers Photobook Designer on the App Store"
         src="img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" />
     </a>
+  </div>
+</div>
+
+<div id="mission-statement" class="py-24 px-6 bg-slate-50">
+  <div class="text-xl prose mx-auto">
+    <div class="font-headline text-2xl text-brand text-center mb-12">From Our Family to Yours</div>
+
+    <img class="rounded-xl mt-2 mb-3 w-full object-cover object-center" src="img/Alex.webp"
+      alt="Photo of Alex, the creator of Keepers" width="250" height="250" />
+
+    <div class="my-6">
+      Hi! I'm Alex.
+      I built Keepers for our own little family of three, to help us slow down and savor the moments that
+      matter most.
+    </div>
+
+    <div class="my-6">
+      (The girl in the screenshots above is my daughter. I first got the idea of Keepers
+      when she was just born. How time flies.)
+    </div>
+
+    <div class="my-6">
+      The Keepers app is free for you to use. All the PDFs you create are yours to keep.
+      If you choose to order physical books, we charge a fair price for the printing and shipping.
+    </div>
+
+    <div class="my-6">
+      Thank you and Welcome.
+    </div>
   </div>
 </div>
 
@@ -349,11 +312,10 @@
   --
 -->
 
-<div
-  id="books"
+<!--
+<div id="books"
   class="px-2 py-24 text-gray-900 bg-origin-padding border-8 border-transparent bg-contain bg-right-bottom bg-no-repeat">
-  <h2
-    class="mx-auto font-headline font-black text-center text-xl mb-6 max-w-lg">
+  <h2 class="mx-auto font-headline font-black text-center text-xl mb-6 max-w-lg">
     Robustly made. Clearly priced. Here are what to expect from your Keepers photobooks.
   </h2>
 
@@ -364,79 +326,31 @@
         <b class="text-brand font-bold">your photos will look gorgeous</b>
         just like when you took them.
       </span>
-      <img
-        loading="lazy"
-        class="rounded-xl mt-2 mb-3 w-full object-cover object-center"
-        src="img/book-content.webp"
-        alt="Photo of an opened book with lovely photo showing print qualities."
-        width="250"
-        height="250" />
+      <img loading="lazy" class="rounded-xl mt-2 mb-3 w-full object-cover object-center" src="img/book-content.webp"
+        alt="Photo of an opened book with lovely photo showing print qualities." width="250" height="250" />
     </section>
 
     <section class="prose mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
       <span>
-        Keepers soft cover books comes with a robust spine that will
+        Keepers uses a staple binding system so your books will have a robust spine that will
         <b class="text-brand">withstand repeated heavy use</b>.
       </span>
-      <img
-        loading="lazy"
-        class="rounded-xl mt-2 mb-3 w-full object-cover object-center"
-        src="img/book-binding.webp"
-        alt="Zoom-in photo of a Keepers Photobook perfect binding of a wedding book"
-        width="250"
-        height="250" />
+      <img loading="lazy" class="rounded-xl mt-2 mb-3 w-full object-cover object-center" src="img/book-binding.webp"
+        alt="Zoom-in photo of a Keepers Photobook perfect binding of a wedding book" width="250" height="250" />
     </section>
 
     <section class="prose mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
       <span>
-        Keepers books are reasonably and transparently priced. <b class="text-brand">Starts at $39.95</b> for 41 pages. 
+        Keepers books are reasonably and transparently priced. <b class="text-brand">Starts at $39.95</b> for 41
+        pages.
         Then <b class="text-brand">$0.50 per extra page.</b>
       </span>
-      <img
-        loading="lazy"
-        class="rounded-xl mt-2 mb-3 w-full object-cover object-center"
-        src="img/book-cover.webp"
-        alt="Photo of a Keepers Photobook cover and a stack of books."
-        width="250"
-        height="250" />
+      <img loading="lazy" class="rounded-xl mt-2 mb-3 w-full object-cover object-center" src="img/book-cover.webp"
+        alt="Photo of a Keepers Photobook cover and a stack of books." width="250" height="250" />
     </section>
   </div>
 </div>
-
-<!--
-  --
-  --
-  --
-  --
-  --  📦 Book a Call
-  --
-  --
-  --
 -->
-
-<div id="calendly" class="bg-white bg-contain">
-  <div class="bg-white max-w-xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
-    <div class="px-6 py-8 sm:p-10 text-center">
-      <p class="prose mt-4">
-        You can download the app from AppStore today. Most customers
-        created their first book within 30 minutes. 
-      </p>
-      <p class="prose mt-4">
-        If you want some guidance, motivation or even an accountability buddy, 
-        book a time with one of us so we can guide you through creating your first book. 
-      </p>
-
-      <div class="mt-8">
-        <a
-          href="https://calendly.com/alex-dong-khvb/30min"
-          target="_blank"
-          class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
-          Book a FREE Call
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!--
   --
@@ -448,11 +362,10 @@
   --
   --
 -->
-<div
-  id="faq"
+<!--
+<div id="faq"
   class="px-2 py-24 text-gray-900 bg-origin-padding border-8 border-transparent bg-contain bg-right-bottom bg-no-repeat bg-slate-50">
-  <h2
-    class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-16 max-w-lg">
+  <h2 class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-16 max-w-lg">
     Frequent Asked Questions
   </h2>
 
@@ -470,7 +383,7 @@
 
     <section class="prose mb-10 max-w-md lg:max-w-lg px-2 lg:px-8">
       <p class="prose font-headline font-semibold text-brand-teal text-xl mb-4">
-        Do you offer hard cover books or lay flat books?
+        Do you offer lay flat books?
       </p>
       <p class="prose font-normal text-black">
         Not yet. To ensure the best overall experience, we are focusing on the
@@ -486,16 +399,15 @@
       </p>
       <p class="prose font-normal text-black">
         Please reach us at
-        <a
-          aria-label="Email address for Keepers Photobook Designer's support team"
-          href="mailto:hello@keepers.photos"
-          >hello@keepers.photos</a
-        >. We are a small company and nothing delights us more than hearing from
+        <a aria-label="Email address for Keepers Photobook Designer's support team"
+          href="mailto:hello@keepers.photos">hello@keepers.photos</a>. We are a small company and nothing delights us
+        more than hearing from
         our customers. We'll get back to you within 24 hours. Rain or shine.
       </p>
     </section>
   </div>
 </div>
+-->
 
 <!--
   --
@@ -507,25 +419,18 @@
   --
   --
 -->
-<div
-  id="mission"
+<!--
+<div id="mission"
   class="px-6 py-24 text-gray-900 bg-origin-padding border-8 border-transparent bg-contain bg-right-bottom bg-no-repeat">
-  <h2
-    class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-16 max-w-lg">
+  <h2 class="mx-auto font-headline font-black text-brand-teal text-center text-2xl md:text-3xl mb-16 max-w-lg">
     To protect <span>your privacy</span> and remain faithful to
     our&nbsp;principles
   </h2>
 
-  <div
-    class="mt-16 grid grid-cols-1 md:grid-cols-3 md:gap-6 max-w-5xl lg:mx-auto">
+  <div class="mt-16 grid grid-cols-1 md:grid-cols-3 md:gap-6 max-w-5xl lg:mx-auto">
     <section class="my-4 max-w-md lg:max-w-lg lg:px-8">
-      <img
-        loading="lazy"
-        class="float-left w-28 lg:w-36 pr-5"
-        src="img/promise-team.webp"
-        alt="Photo of the Keepers team"
-        width="100"
-        height="100" />
+      <img loading="lazy" class="float-left w-28 lg:w-36 pr-5" src="img/promise-team.webp"
+        alt="Photo of the Keepers team" width="100" height="100" />
       <p class="mt-0 max-w-prose">
         The team of parents creating Keepers know how precious your memories
         are. We are firmly committed to keeping your families' memories
@@ -534,13 +439,8 @@
     </section>
 
     <section class="my-4 max-w-md lg:max-w-lg lg:px-8">
-      <img
-        loading="lazy"
-        class="float-left w-28 lg:w-36 mt-3 pr-5"
-        src="img/promise-b-corp.webp"
-        alt="Photo of the B Corp logo"
-        width="100"
-        height="100" />
+      <img loading="lazy" class="float-left w-28 lg:w-36 mt-3 pr-5" src="img/promise-b-corp.webp"
+        alt="Photo of the B Corp logo" width="100" height="100" />
       <p class="mt-0 max-w-prose">
         We are becoming a Benefit corporation. It is a for profit company with a
         legal mandate to make decisions that
@@ -549,13 +449,8 @@
     </section>
 
     <section class="my-4 max-w-md lg:max-w-lg lg:px-8">
-      <img
-        loading="lazy"
-        class="float-left w-28 lg:w-36 pr-5"
-        src="img/promise-1-percent.webp"
-        alt="Photo of the 1% for the planet logo"
-        width="100"
-        height="100" />
+      <img loading="lazy" class="float-left w-28 lg:w-36 pr-5" src="img/promise-1-percent.webp"
+        alt="Photo of the 1% for the planet logo" width="100" height="100" />
       <p class="mt-0 max-w-prose">
         We want <span>our children and their children</span> to enjoy this
         beautiful blue planet. We commit to the 1% for the planet scheme and
@@ -564,6 +459,7 @@
     </section>
   </div>
 </div>
+-->
 
 <!--
   --
@@ -576,55 +472,39 @@
   --
 -->
 
-<div id="testimonials" class="mt-10 px-6 py-12 md:py-20 bg-slate-50">
-  <h2
-    class="mx-auto font-headline font-black text-brand text-center text-2xl md:text-3xl md:max-w-lg mb-12">
-    We asked our early testing parents what they thought of Keepers
+<div id="testimonials" class="mt-10 px-6 py-12 md:py-20">
+  <h2 class="mx-auto font-headline font-black text-brand text-center text-2xl md:text-3xl md:max-w-lg mb-12">
+    We Do Other Parents Think?
   </h2>
 
   <div class="py-8 grid md:grid-cols-3 md:grid-gap-8">
     <section class="pb-12 md:px-4 lg:px-8">
-      <img
-        loading="lazy"
-        class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
-        src="img/testimonial-laura.webp"
-        alt="Photo of Laura, TV producer"
-        width="250"
-        height="141" />
+      <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
+        src="img/testimonial-laura.webp" alt="Photo of Laura, TV producer" width="250" height="141" />
       <p class="prose font-semibold">Laura, TV producer</p>
       <blockquote class="prose mt-2 mb-3 text-black">
         <strong>Treasure on my phone. </strong>
-        &ldquo; Not only did I find all the photos for my book incredibly
-        quickly, I also discovered some forgotten gems that had been lost on my
+        &ldquo; Not only did I get all the photos in a timeline, nice and tidy;
+        I also discovered some forgotten gems that had been lost on my
         phone! &rdquo;
       </blockquote>
     </section>
 
     <section class="pb-12 md:px-4 lg:px-8">
-      <img
-        loading="lazy"
-        class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
-        alt="Photo of Tash, Dentist"
-        src="img/testimonial-tash.webp"
-        width="250"
-        height="141" />
+      <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
+        alt="Photo of Tash, Dentist" src="img/testimonial-tash.webp" width="250" height="141" />
       <p class="prose font-semibold">Tash, Dentist</p>
       <blockquote class="prose mt-2 mb-3 text-black">
         <strong>I'm inspired!</strong>
-        &ldquo; I've been hesitant about making photobooks in the past because
+        &ldquo; I've been hesitant to even tackle my photos in the past because
         it would take too long and can be too tricky. But honestly, this has
         been the best thing I've done this year. &rdquo;
       </blockquote>
     </section>
 
     <section class="pb-12 px-2 md:px-4 lg:px-8">
-      <img
-        loading="lazy"
-        class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
-        alt="Photo of Jay, SAHM"
-        src="img/testimonial-jay.webp"
-        width="250"
-        height="141" />
+      <img loading="lazy" class="rounded-xl mb-3 w-full object-cover object-center aspect-video"
+        alt="Photo of Jay, SAHM" src="img/testimonial-jay.webp" width="250" height="141" />
       <p class="prose font-semibold">Jay, SAHM</p>
       <blockquote class="prose mt-2 mb-3 text-black">
         <strong>Super speedy!</strong>
@@ -646,10 +526,7 @@
   --
 -->
 
-<div
-  id="call-to-action-second"
-  class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat"
-  style="
+<div id="call-to-action-second" class="h-screen flex flex-col justify-between pb-10 bg-cover bg-top bg-no-repeat" style="
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0),
@@ -660,20 +537,15 @@
   <div class="flex-grow"></div>
 
   <div class="bottom-content text-center text-xl px-8 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
-    <p class="prose mx-auto text-center font-bold text-white max-w-lg mb-8">
-    Join our gang of happy snappers and photobook makers. <br/>
-      Download Keepers Today.
+    <p class="prose mx-auto text-center font-bold text-3xl text-white max-w-lg mb-8">
+      Join our gang of happy snappers today.
     </p>
 
     <div class="flex justify-center mb-12">
-      <a
-        aria-label="Download Keepers Photobook Designer on the App Store"
-        href="https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575"
+      <a aria-label="Download Keepers Photobook Designer on the App Store"
+        href="https://apps.apple.com/app/apple-store/id1579027575?pt=106308819&ct=Website-Landing-Page&mt=8"
         onclick="trackAppstoreClick()">
-        <img
-          loading="lazy"
-          class="h-[60px] mx-2"
-          alt="Download Keepers Photobook Designer on the App Store"
+        <img loading="lazy" class="h-[60px] mx-2" alt="Download Keepers Photobook Designer on the App Store"
           src="img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" />
       </a>
     </div>
@@ -691,18 +563,13 @@
   --
 -->
 
-<div
-  id="footer"
-  class="flex flex-col justify-between px-10 py-10 bg-cover bg-top bg-no-repeat">
+<div id="footer" class="flex flex-col justify-between px-10 py-10 bg-cover bg-top bg-no-repeat">
   <div>
     <p class="text-sm max-w-prose mx-auto">
       For feedback, issues &amp; requests, please email us at
-      <a
-        aria-label="Email address for Keepers Photobook Designer's support team"
-        href="mailto:contact@keepers.photos"
-        class="underline"
-        >hello@keepers.photos</a
-      >. Our physical address is 26 Bath Street, Dunedin, Otago, New Zealand.
+      <a aria-label="Email address for Keepers Photobook Designer's support team" href="mailto:contact@keepers.photos"
+        class="underline">hello@keepers.photos</a>. Our physical address is 26 Bath Street, Dunedin, Otago, New
+      Zealand.
       Our contact number is (64)21-0822-3483. You may also want to check out our
       <a href="/privacy.html" class="underline">Privacy Policy</a>. TLDR: your
       photos stay on your device. We won't send your private data
@@ -713,7 +580,7 @@
 
 
 
-    <!--
+  <!--
       --
       --
       --
@@ -724,48 +591,41 @@
       --
     -->
 
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "875415683448386");
-      fbq("track", "PageView");
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        alt="Facebook Pixel"
-        src="https://www.facebook.com/tr?id=875415683448386&ev=PageView&noscript=1" /></noscript
-    ><!-- End Facebook Pixel Code -->
-  </body>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "875415683448386");
+    fbq("track", "PageView");
+  </script>
+  <noscript>
+    <img height="1" width="1" alt="Facebook Pixel"
+      src="https://www.facebook.com/tr?id=875415683448386&ev=PageView&noscript=1" />
+  </noscript><!-- End Facebook Pixel Code -->
 
-  <!-- Google tag (gtag.js) -->
-  <!--
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-JJL0ZF4F88"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJL0ZF4F88"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -774,7 +634,13 @@
     gtag("js", new Date());
     gtag("config", "G-JJL0ZF4F88");
   </script>
-  -->
+
+  <!-- Reddit Pixel -->
+  <script>
+    !function (w, d) { if (!w.rdt) { var p = w.rdt = function () { p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments) }; p.callQueue = []; var t = d.createElement("script"); t.src = "https://www.redditstatic.com/ads/pixel.js", t.async = !0; var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(t, s) } }(window, document); rdt('init', 'a2_g5gu5srmlndl'); rdt('track', 'PageVisit');
+  </script>
+  <!-- End Reddit Pixel -->
+
 
   <!-- Track link click -->
   <script>
@@ -793,68 +659,15 @@
         }
       }, 2000);
       return false;
+
+      /// Report to Reddit Pixel
     }
 
     function trackAppstoreClick() {
       trackLinkClick(
-        "https://apps.apple.com/nz/app/keepers-family-photo-organiser/id1579027575"
+        "https://apps.apple.com/nz/app/keepers-daily-photo-ritual/id1579027575"
       );
     }
-  </script>
-
-  <!-- Posthog -->
-  <script>
-    !(function (t, e) {
-      var o, n, p, r;
-      e.__SV ||
-        ((window.posthog = e),
-        (e._i = []),
-        (e.init = function (i, s, a) {
-          function g(t, e) {
-            var o = e.split(".");
-            2 == o.length && ((t = t[o[0]]), (e = o[1])),
-              (t[e] = function () {
-                t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
-              });
-          }
-          ((p = t.createElement("script")).type = "text/javascript"),
-            (p.async = !0),
-            (p.src =
-              s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
-              "/static/array.js"),
-            (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
-              p,
-              r
-            );
-          var u = e;
-          for (
-            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
-              u.people = u.people || [],
-              u.toString = function (t) {
-                var e = "posthog";
-                return (
-                  "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
-                );
-              },
-              u.people.toString = function () {
-                return u.toString(1) + ".people (stub)";
-              },
-              o =
-                "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(
-                  " "
-                ),
-              n = 0;
-            n < o.length;
-            n++
-          )
-            g(u, o[n]);
-          e._i.push([i, s, a]);
-        }),
-        (e.__SV = 1));
-    })(document, window.posthog || []);
-    posthog.init("phc_MMB1OVEjtuJEuGOQ5GnQsv6RtBaBydMxk25n8qhVjVI", {
-      api_host: "https://us.i.posthog.com",
-    });
   </script>
 
   <!-- Service Worker as requested to show install prompt for iOS devices -->
@@ -867,4 +680,5 @@
       });
     }
   </script>
+
 </html>

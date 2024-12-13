@@ -1,9 +1,9 @@
 """
-This script accepts a single html file as input, it uses jinja2 to render it and a template into 
-html and save it into the `assets` directory with the same name. 
+This script accepts a single html file as input, it uses jinja2 to render it and a template into
+html and save it into the `assets` directory with the same name.
 
-It assumes that the source file is in the `src` directory, 
-and the template is `src/_template.html` 
+It assumes that the source file is in the `src` directory,
+and the template is `src/_template.html`
 """
 
 import sys

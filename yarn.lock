@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@esbuild/darwin-arm64@0.18.20":
+"@esbuild/darwin-x64@0.18.20":
   version "0.18.20"
-  resolved "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.18.20.tgz"
-  integrity sha512-bxRHW5kHU38zS2lPTPOyuyTm+S+eobPUnTNkdJEfAddYgEcll4xkT8DB9d2008DtTbl7uJag2HuE5NZAZgnNEA==
+  resolved "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.18.20.tgz"
+  integrity sha512-pc5gxlMDxzm513qPGbCbDukOdsGtKhfxD1zJKXjCCcU7ju50O7MeAZ8c4krSJcOIJGFR+qx21yMMVYwiQvyTyQ==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -766,11 +766,6 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
-
-vite-plugin-html-template@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/vite-plugin-html-template/-/vite-plugin-html-template-0.1.0.tgz"
-  integrity sha512-Srzhy5ndE2UERIpOP5TUvtmDg8HIb1aQfI+7BDhwkFPL1AsPeDcDfewizcsdtYRzn/RKAzBNdKKiBOwyJcNrOg==
 
 vite@^4.5.0:
   version "4.5.3"

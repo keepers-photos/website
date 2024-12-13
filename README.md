@@ -16,16 +16,16 @@ how they interact:
 
 ```zsh
 npm install
-python3 -m venv .
+python3 -m venv .venv
+. .venv/bin/activate
 pip install -r requirements.txt
-. bin/activate
 ```
 
 Also, we use `modd` to watch for changes in the python files.
 [Install it](https://github.com/cortesi/modd/releases/tag/v0.8) if you don't
 have it.
 
-To test html on multiple devices simultaenously, we want vite to bind to a local
+To test html on multiple devices simultaneously, we want vite to bind to a local
 LAN IP address. (Please refer to `vite.config.js`). Note also that we only use
 the last IP address in the list of IP addresses.
 
@@ -40,7 +40,8 @@ source ~/.zshrc
 ## Run
 
 ```zsh
-modd && node_modules/vite/bin/vite.js dev
+modd 
+node_modules/vite/bin/vite.js dev
 ```
 
 ## Build for deployment
