@@ -520,18 +520,22 @@ owner) | Your New Daily Photo Ritual
     // https://ads.google.com/aw/conversions/detail/settings?ocid=1107783968&ctId=6851505824&showWebpagesTab=false&showDiagnosticsTab=false&showStoreDiagnosticsTab=false&conversionPlaceInfo=%7B%7D&euid=706181433&__u=9231101617&uscid=1107783968&__c=3634828832&authuser=0&subid=nz-en-awhp-g-aw-c-home-signin%21o2-adshp-hv-q4-22
     // https://business.facebook.com/events_manager2/list/dataset/875415683448386/overview?business_id=653651962453304&date=2024-06-18_2024-07-15
     function trackLinkClick(url) {
-      // gtag("event", "conversion_event_signup", {});
-      fbq("track", "conversion_event_signup");
+      // Prevent immediate redirect
+      if (event) {
+        event.preventDefault();
+      }
 
-      /// Pause 2000ms before redirecting to the URL.
+      gtag("event", "click", { transport_type: 'beacon' });
+      fbq("track", "conversion_event_signup", { transport_type: 'beacon' });
+      rdt("track", "Click", { transport_type: 'beacon' });
+
+      /// Pause 300ms before redirecting to the URL.
       setTimeout(function () {
         if (typeof url === "string") {
-          window.location = url;
+          window.location.href = url;
         }
-      }, 2000);
+      }, 300);
       return false;
-
-      /// Report to Reddit Pixel
     }
 
     function trackAppstoreClick() {
